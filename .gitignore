@@ -141,5 +141,6 @@ staticfiles
 mediafiles
 
 venv2
+*.zip
 
 *.json

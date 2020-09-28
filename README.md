@@ -47,3 +47,12 @@ Includes the functions that were used to create the Klang inputs, for both spIke
 ### tf-idf approach
 Can be found in the package `cluster`.
 `cluster_tweets.py` runs the entire pipeline of the approach and creates Klang output.
+
+
+### Files
+
+Files used in the creation of the thesis can be found here: https://drive.google.com/file/d/1AGnA7F9Ityi2fhSEWmGuHZXjIvcLMtW7/view?usp=sharing
+
+### List of schools / consulting providers
+
+The list of schools / consulting providers used for this thesis can be found in the file `RELEVANT.txt`.
