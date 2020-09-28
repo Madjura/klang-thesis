@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>feature_extraction package &#8212; Klang  documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="index package" href="index.html" />
+    <link rel="prev" title="debug module" href="debug.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="feature-extraction-package">
+<h1>feature_extraction package<a class="headerlink" href="#feature-extraction-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-feature_extraction.scaffidi">
+<span id="feature-extraction-scaffidi-module"></span><h2>feature_extraction.scaffidi module<a class="headerlink" href="#module-feature_extraction.scaffidi" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="feature_extraction.scaffidi.compare_ex_features">
+<code class="sig-prename descclassname">feature_extraction.scaffidi.</code><code class="sig-name descname">compare_ex_features</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">users</span></em>, <em class="sig-param"><span class="n">users_as_reference</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">reference_users</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">min_length</span><span class="o">=</span><span class="default_value">3</span></em>, <em class="sig-param"><span class="n">nouns_only</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feature_extraction.scaffidi.compare_ex_features" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates features for multiple users and compares the scores for those that they share.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>users</strong> – A list of UserEx objects for which the features are to be calculated and compared.</p></li>
+<li><p><strong>users_as_reference</strong> – Optional. Default: False. Whether the texts of other users are to be used as the
+reference corpus. If set to Fals, the English Wikipedia dump will be used. If set to True, “all_users” is
+a required argument.</p></li>
+<li><p><strong>reference_users</strong> – Optional. Default: None. Required if “users_as_reference” is set to True. The other users to
+to use as a reference corpus.</p></li>
+<li><p><strong>min_length</strong> – Optional. Default: 3. The minimum amount of alphabetic characters that a feature needs to have.</p></li>
+<li><p><strong>nouns_only</strong> – Optional. Default: True. Whether or not only nouns can be features.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A dictionary mapping the features found in texts by users from the “users” argument to a list
+of scores for each user, and a second dictionary mapping those features that are shared by at least two users
+to the scores of each user. If a feature was not found for a user, the corresponding score will be 0 (zero).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="feature_extraction.scaffidi.feature_extraction_full_ex">
+<code class="sig-prename descclassname">feature_extraction.scaffidi.</code><code class="sig-name descname">feature_extraction_full_ex</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">users</span></em>, <em class="sig-param"><span class="n">users_as_reference</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">other_users</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">min_length</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">nouns_only</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feature_extraction.scaffidi.feature_extraction_full_ex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs “feature” extraction on external data.
+The “features” are terms that a certain user uses in their texts that appear more often there than in a reference
+corpus, generally speaking.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Param</dt>
+<dd class="field-odd"><p>users: A UserEx queryset. The users for which the “features” are to be extracted.</p>
+</dd>
+<dt class="field-even">Param</dt>
+<dd class="field-even"><p>users_as_reference: Optional. Default: False. Whether or not the texts of other users are to be used as the
+reference corpus. If set to True, the “other_users” argument is required.
+If set to False a version of the English Wikipedia will be used as the reference corpus.</p>
+</dd>
+<dt class="field-odd">Param</dt>
+<dd class="field-odd"><p>other_users: Required if “users_as_reference” is set to True. The users for whom the associated texts will
+be used as the reference corpus.</p>
+</dd>
+<dt class="field-even">Param</dt>
+<dd class="field-even"><p>min_length: Optional. Default: 3. The minimum length that a term needs to have to be considered for the
+feature extraction.</p>
+</dd>
+<dt class="field-odd">Param</dt>
+<dd class="field-odd"><p>nouns_only: Optional. Default: True. Whether or not only nouns are to be used for the feature extraction.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A sorted list in the format [ (score1, feature1), (score2, feature2), … ], where a lower score indicates
+that the feature is more likely to actually be a feature / is more relevant.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="feature_extraction.scaffidi.feature_extraction_spike">
+<code class="sig-prename descclassname">feature_extraction.scaffidi.</code><code class="sig-name descname">feature_extraction_spike</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tweets</span></em>, <em class="sig-param"><span class="n">reference_tweets</span></em>, <em class="sig-param"><span class="n">min_length</span><span class="o">=</span><span class="default_value">3</span></em>, <em class="sig-param"><span class="n">nouns_only</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feature_extraction.scaffidi.feature_extraction_spike" title="Permalink to this definition">¶</a></dt>
+<dd><p>Feature extraction for the sp⬆️ke algorithm.
+:param tweets:
+:param reference_tweets:
+:param min_length:
+:param nouns_only:
+:return:</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="feature_extraction.scaffidi.filter_unigrams_bigrams">
+<code class="sig-prename descclassname">feature_extraction.scaffidi.</code><code class="sig-name descname">filter_unigrams_bigrams</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">unigram_freqs</span></em>, <em class="sig-param"><span class="n">bigram_freqs</span></em>, <em class="sig-param"><span class="n">skip_bigrams</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feature_extraction.scaffidi.filter_unigrams_bigrams" title="Permalink to this definition">¶</a></dt>
+<dd><p>Filters the unigrams and bigrams by the sqrt of the average frequency.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>unigram_freqs</strong> – A dictionary mapping the unigrams to their frequency.</p></li>
+<li><p><strong>bigram_freqs</strong> – A dictionary mapping the bigrams to their frequency.</p></li>
+<li><p><strong>skip_bigrams</strong> – Optional. Default: False. Whether or not bigrams should be excluded. Skipping them will result
+in a huge speed increase.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The filtered unigram and bigram freqs.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="feature_extraction.scaffidi.get_freqs">
+<code class="sig-prename descclassname">feature_extraction.scaffidi.</code><code class="sig-name descname">get_freqs</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#feature_extraction.scaffidi.get_freqs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="feature_extraction.scaffidi.get_freqs_ex">
+<code class="sig-prename descclassname">feature_extraction.scaffidi.</code><code class="sig-name descname">get_freqs_ex</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">users</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">min_length</span><span class="o">=</span><span class="default_value">3</span></em>, <em class="sig-param"><span class="n">nouns_only</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feature_extraction.scaffidi.get_freqs_ex" title="Permalink to this definition">¶</a></dt>
+<dd><p># TODO: remove bigrams properly from other functions
+Returns a mapping of terms to their frequency.
+A queryset of UserEx objects can be passed, in which case only the frequencies of those users will be returned.
+The frequencies and terms are based on the TweetExIndex instances.
+Filters out mentions (start with “&#64;”) hashtags (start with “#”) and retweeets (start with “<a href="#id1"><span class="problematic" id="id2">rt_</span></a>”).
+Filters out all terms that are below a minimum length, which by default is set to 3. Only alphabetic characters
+count towards this minimum length.</p>
+<p>!!! The texts need to be indexed before this function works properly !!!</p>
+<dl class="field-list simple">
+<dt class="field-odd">Param</dt>
+<dd class="field-odd"><p>users: Optional. Must be a queryset of UserEx objects. If passed only the texts of the specified users
+will be considered.</p>
+</dd>
+<dt class="field-even">Param</dt>
+<dd class="field-even"><p>min_length: Optional. Default: 3. The minimum length that terms must have to be considered.</p>
+</dd>
+<dt class="field-odd">Param</dt>
+<dd class="field-odd"><p>nouns_only: Optional. Default: True. Whether or not to consider only nouns.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A dictionary mapping terms to their frequency for unigrams, and an empty dictionary for bigrams.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="feature_extraction.scaffidi.get_freqs_spike">
+<code class="sig-prename descclassname">feature_extraction.scaffidi.</code><code class="sig-name descname">get_freqs_spike</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tweets</span></em>, <em class="sig-param"><span class="n">min_length</span><span class="o">=</span><span class="default_value">3</span></em>, <em class="sig-param"><span class="n">nouns_only</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feature_extraction.scaffidi.get_freqs_spike" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="feature_extraction.scaffidi.scaffidi">
+<code class="sig-prename descclassname">feature_extraction.scaffidi.</code><code class="sig-name descname">scaffidi</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">unigram_freqs</span></em>, <em class="sig-param"><span class="n">bigram_freqs</span></em>, <em class="sig-param"><span class="n">skip_bigrams</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">users_as_reference</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">users</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feature_extraction.scaffidi.scaffidi" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates Scaffidi score for unigrams and bigrams.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Param</dt>
+<dd class="field-odd"><p>unigram_freqs: The unigrams with frequency.</p>
+</dd>
+<dt class="field-even">Param</dt>
+<dd class="field-even"><p>bigram_freqs: The bigrams with frequency.</p>
+</dd>
+<dt class="field-odd">Param</dt>
+<dd class="field-odd"><p>skip_bigrams: Optional. Default: False. Whether or not to skip bigrams. Skipping them causes a large
+speedup.</p>
+</dd>
+<dt class="field-even">Param</dt>
+<dd class="field-even"><p>users_as_reference: Optional. Default: False. When set to True “users” must be passed. When set to “False”
+uses the Wikipedia dump as a reference corpus, otherwise it uses the texts of the users specified in the
+argument as the reference corpus.</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="feature_extraction.scaffidi.scaffidi_spike">
+<code class="sig-prename descclassname">feature_extraction.scaffidi.</code><code class="sig-name descname">scaffidi_spike</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">freqs</span></em>, <em class="sig-param"><span class="n">freqs_reference</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feature_extraction.scaffidi.scaffidi_spike" title="Permalink to this definition">¶</a></dt>
+<dd><p>Scaffidi score calculation for the sp⬆️ke algorithm.
+:param freqs:
+:param freqs_reference:
+:return:</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-feature_extraction.tweets">
+<span id="feature-extraction-tweets-module"></span><h2>feature_extraction.tweets module<a class="headerlink" href="#module-feature_extraction.tweets" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="feature_extraction.tweets.index_numbers">
+<code class="sig-prename descclassname">feature_extraction.tweets.</code><code class="sig-name descname">index_numbers</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#feature_extraction.tweets.index_numbers" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="feature_extraction.tweets.index_tweets">
+<code class="sig-prename descclassname">feature_extraction.tweets.</code><code class="sig-name descname">index_tweets</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tweets</span></em>, <em class="sig-param"><span class="n">lemmatize</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">min_len</span><span class="o">=</span><span class="default_value">3</span></em><span class="sig-paren">)</span><a class="headerlink" href="#feature_extraction.tweets.index_tweets" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-feature_extraction">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-feature_extraction" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="debug.html" title="previous chapter">debug module</a></li>
+      <li>Next: <a href="index.html" title="next chapter">index package</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Thomas Huber.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/BUILD/feature_extraction.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

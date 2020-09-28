@@ -144,3 +144,5 @@ venv2
 *.zip
 
 *.json
+
+db.sqlite3

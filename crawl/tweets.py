@@ -16,6 +16,11 @@ from titaness.settings import TWITTER_KEY, TWITTER_SECRET, TWITTER_ACCESS_TOKEN,
 
 
 def normalize_datatime(s):
+    """
+    Normalizes datetime.
+    :param s: The date, as a string.
+    :return: Normalized datetime.
+    """
     try:
         return parse_datetime(s).strftime("%m/%d/%Y, %H:%M:%S")
     except Exception as e:
