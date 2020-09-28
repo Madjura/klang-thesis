@@ -1,0 +1,1 @@
+celery -A titaness worker -l info
