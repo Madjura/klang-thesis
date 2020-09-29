@@ -52,3 +52,7 @@ Files used in the creation of the thesis can be found here: https://drive.google
 ### List of schools / consulting providers
 
 The list of schools / consulting providers used for this thesis can be found in the file `RELEVANT.txt`.
+
+### Documentation
+
+The documentation can be found here: https://madjura.github.io/klang-thesis/
