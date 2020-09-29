@@ -1,0 +1,665 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>indexapp package &#8212; Klang  documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="indexapp.migrations package" href="indexapp.migrations.html" />
+    <link rel="prev" title="index package" href="index.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="indexapp-package">
+<h1>indexapp package<a class="headerlink" href="#indexapp-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="indexapp.migrations.html">indexapp.migrations package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="indexapp.migrations.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="indexapp.migrations.html#module-indexapp.migrations.0001_initial">indexapp.migrations.0001_initial module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="indexapp.migrations.html#module-indexapp.migrations">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-indexapp.admin">
+<span id="indexapp-admin-module"></span><h2>indexapp.admin module<a class="headerlink" href="#module-indexapp.admin" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-indexapp.apps">
+<span id="indexapp-apps-module"></span><h2>indexapp.apps module<a class="headerlink" href="#module-indexapp.apps" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="indexapp.apps.IndexappConfig">
+<em class="property">class </em><code class="sig-prename descclassname">indexapp.apps.</code><code class="sig-name descname">IndexappConfig</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">app_name</span></em>, <em class="sig-param"><span class="n">app_module</span></em><span class="sig-paren">)</span><a class="headerlink" href="#indexapp.apps.IndexappConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.apps.config.AppConfig</span></code></p>
+<dl class="py attribute">
+<dt id="indexapp.apps.IndexappConfig.name">
+<code class="sig-name descname">name</code><em class="property"> = 'indexapp'</em><a class="headerlink" href="#indexapp.apps.IndexappConfig.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-indexapp.models">
+<span id="indexapp-models-module"></span><h2>indexapp.models module<a class="headerlink" href="#module-indexapp.models" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="indexapp.models.FeedNPDateIndex">
+<em class="property">class </em><code class="sig-prename descclassname">indexapp.models.</code><code class="sig-name descname">FeedNPDateIndex</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span></em>, <em class="sig-param"><span class="n">term</span></em>, <em class="sig-param"><span class="n">feed</span></em>, <em class="sig-param"><span class="n">frequency</span></em>, <em class="sig-param"><span class="n">date</span></em><span class="sig-paren">)</span><a class="headerlink" href="#indexapp.models.FeedNPDateIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
+<dl class="py exception">
+<dt id="indexapp.models.FeedNPDateIndex.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#indexapp.models.FeedNPDateIndex.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="indexapp.models.FeedNPDateIndex.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#indexapp.models.FeedNPDateIndex.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.FeedNPDateIndex.date">
+<code class="sig-name descname">date</code><a class="headerlink" href="#indexapp.models.FeedNPDateIndex.date" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.FeedNPDateIndex.feed">
+<code class="sig-name descname">feed</code><a class="headerlink" href="#indexapp.models.FeedNPDateIndex.feed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related object on the forward side of a many-to-one or
+one-to-one (via ForwardOneToOneDescriptor subclass) relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Child.parent</span></code> is a <code class="docutils literal notranslate"><span class="pre">ForwardManyToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.FeedNPDateIndex.feed_id">
+<code class="sig-name descname">feed_id</code><a class="headerlink" href="#indexapp.models.FeedNPDateIndex.feed_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.FeedNPDateIndex.frequency">
+<code class="sig-name descname">frequency</code><a class="headerlink" href="#indexapp.models.FeedNPDateIndex.frequency" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="indexapp.models.FeedNPDateIndex.get_next_by_date">
+<code class="sig-name descname">get_next_by_date</code><span class="sig-paren">(</span><em class="sig-param">*</em>, <em class="sig-param">field=&lt;django.db.models.fields.DateTimeField: date&gt;</em>, <em class="sig-param">is_next=True</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#indexapp.models.FeedNPDateIndex.get_next_by_date" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="indexapp.models.FeedNPDateIndex.get_previous_by_date">
+<code class="sig-name descname">get_previous_by_date</code><span class="sig-paren">(</span><em class="sig-param">*</em>, <em class="sig-param">field=&lt;django.db.models.fields.DateTimeField: date&gt;</em>, <em class="sig-param">is_next=False</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#indexapp.models.FeedNPDateIndex.get_previous_by_date" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.FeedNPDateIndex.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#indexapp.models.FeedNPDateIndex.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.FeedNPDateIndex.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#indexapp.models.FeedNPDateIndex.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.FeedNPDateIndex.term">
+<code class="sig-name descname">term</code><a class="headerlink" href="#indexapp.models.FeedNPDateIndex.term" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="indexapp.models.FeedNPIndex">
+<em class="property">class </em><code class="sig-prename descclassname">indexapp.models.</code><code class="sig-name descname">FeedNPIndex</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span></em>, <em class="sig-param"><span class="n">term</span></em>, <em class="sig-param"><span class="n">feed</span></em>, <em class="sig-param"><span class="n">frequency</span></em>, <em class="sig-param"><span class="n">feed_user</span></em><span class="sig-paren">)</span><a class="headerlink" href="#indexapp.models.FeedNPIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
+<dl class="py exception">
+<dt id="indexapp.models.FeedNPIndex.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#indexapp.models.FeedNPIndex.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="indexapp.models.FeedNPIndex.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#indexapp.models.FeedNPIndex.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.FeedNPIndex.feed">
+<code class="sig-name descname">feed</code><a class="headerlink" href="#indexapp.models.FeedNPIndex.feed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related object on the forward side of a many-to-one or
+one-to-one (via ForwardOneToOneDescriptor subclass) relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Child.parent</span></code> is a <code class="docutils literal notranslate"><span class="pre">ForwardManyToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.FeedNPIndex.feed_id">
+<code class="sig-name descname">feed_id</code><a class="headerlink" href="#indexapp.models.FeedNPIndex.feed_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.FeedNPIndex.feed_user">
+<code class="sig-name descname">feed_user</code><a class="headerlink" href="#indexapp.models.FeedNPIndex.feed_user" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.FeedNPIndex.frequency">
+<code class="sig-name descname">frequency</code><a class="headerlink" href="#indexapp.models.FeedNPIndex.frequency" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.FeedNPIndex.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#indexapp.models.FeedNPIndex.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.FeedNPIndex.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#indexapp.models.FeedNPIndex.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.FeedNPIndex.term">
+<code class="sig-name descname">term</code><a class="headerlink" href="#indexapp.models.FeedNPIndex.term" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="indexapp.models.TextExIndex">
+<em class="property">class </em><code class="sig-prename descclassname">indexapp.models.</code><code class="sig-name descname">TextExIndex</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span></em>, <em class="sig-param"><span class="n">term</span></em>, <em class="sig-param"><span class="n">text</span></em>, <em class="sig-param"><span class="n">count</span></em>, <em class="sig-param"><span class="n">noun</span></em><span class="sig-paren">)</span><a class="headerlink" href="#indexapp.models.TextExIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
+<dl class="py exception">
+<dt id="indexapp.models.TextExIndex.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#indexapp.models.TextExIndex.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="indexapp.models.TextExIndex.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#indexapp.models.TextExIndex.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.TextExIndex.count">
+<code class="sig-name descname">count</code><a class="headerlink" href="#indexapp.models.TextExIndex.count" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.TextExIndex.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#indexapp.models.TextExIndex.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.TextExIndex.noun">
+<code class="sig-name descname">noun</code><a class="headerlink" href="#indexapp.models.TextExIndex.noun" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.TextExIndex.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#indexapp.models.TextExIndex.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.TextExIndex.term">
+<code class="sig-name descname">term</code><a class="headerlink" href="#indexapp.models.TextExIndex.term" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.TextExIndex.text">
+<code class="sig-name descname">text</code><a class="headerlink" href="#indexapp.models.TextExIndex.text" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related object on the forward side of a many-to-one or
+one-to-one (via ForwardOneToOneDescriptor subclass) relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Child.parent</span></code> is a <code class="docutils literal notranslate"><span class="pre">ForwardManyToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.TextExIndex.text_id">
+<code class="sig-name descname">text_id</code><a class="headerlink" href="#indexapp.models.TextExIndex.text_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="indexapp.models.TweetExIndex">
+<em class="property">class </em><code class="sig-prename descclassname">indexapp.models.</code><code class="sig-name descname">TweetExIndex</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span></em>, <em class="sig-param"><span class="n">term</span></em>, <em class="sig-param"><span class="n">tweet</span></em>, <em class="sig-param"><span class="n">day</span></em>, <em class="sig-param"><span class="n">month</span></em>, <em class="sig-param"><span class="n">year</span></em>, <em class="sig-param"><span class="n">count</span></em>, <em class="sig-param"><span class="n">noun</span></em><span class="sig-paren">)</span><a class="headerlink" href="#indexapp.models.TweetExIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
+<dl class="py exception">
+<dt id="indexapp.models.TweetExIndex.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#indexapp.models.TweetExIndex.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="indexapp.models.TweetExIndex.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#indexapp.models.TweetExIndex.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.TweetExIndex.count">
+<code class="sig-name descname">count</code><a class="headerlink" href="#indexapp.models.TweetExIndex.count" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.TweetExIndex.day">
+<code class="sig-name descname">day</code><a class="headerlink" href="#indexapp.models.TweetExIndex.day" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.TweetExIndex.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#indexapp.models.TweetExIndex.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.TweetExIndex.month">
+<code class="sig-name descname">month</code><a class="headerlink" href="#indexapp.models.TweetExIndex.month" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.TweetExIndex.noun">
+<code class="sig-name descname">noun</code><a class="headerlink" href="#indexapp.models.TweetExIndex.noun" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.TweetExIndex.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#indexapp.models.TweetExIndex.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.TweetExIndex.term">
+<code class="sig-name descname">term</code><a class="headerlink" href="#indexapp.models.TweetExIndex.term" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.TweetExIndex.tweet">
+<code class="sig-name descname">tweet</code><a class="headerlink" href="#indexapp.models.TweetExIndex.tweet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related object on the forward side of a many-to-one or
+one-to-one (via ForwardOneToOneDescriptor subclass) relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Child.parent</span></code> is a <code class="docutils literal notranslate"><span class="pre">ForwardManyToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.TweetExIndex.tweet_id">
+<code class="sig-name descname">tweet_id</code><a class="headerlink" href="#indexapp.models.TweetExIndex.tweet_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.TweetExIndex.year">
+<code class="sig-name descname">year</code><a class="headerlink" href="#indexapp.models.TweetExIndex.year" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="indexapp.models.TweetIndex">
+<em class="property">class </em><code class="sig-prename descclassname">indexapp.models.</code><code class="sig-name descname">TweetIndex</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span></em>, <em class="sig-param"><span class="n">term</span></em>, <em class="sig-param"><span class="n">tweet</span></em>, <em class="sig-param"><span class="n">bigram</span></em>, <em class="sig-param"><span class="n">lemmatized</span></em><span class="sig-paren">)</span><a class="headerlink" href="#indexapp.models.TweetIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
+<dl class="py exception">
+<dt id="indexapp.models.TweetIndex.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#indexapp.models.TweetIndex.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="indexapp.models.TweetIndex.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#indexapp.models.TweetIndex.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.TweetIndex.bigram">
+<code class="sig-name descname">bigram</code><a class="headerlink" href="#indexapp.models.TweetIndex.bigram" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.TweetIndex.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#indexapp.models.TweetIndex.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.TweetIndex.lemmatized">
+<code class="sig-name descname">lemmatized</code><a class="headerlink" href="#indexapp.models.TweetIndex.lemmatized" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.TweetIndex.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;indexapp.models.TweetIndexManager object&gt;</em><a class="headerlink" href="#indexapp.models.TweetIndex.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.TweetIndex.term">
+<code class="sig-name descname">term</code><a class="headerlink" href="#indexapp.models.TweetIndex.term" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.TweetIndex.tweet">
+<code class="sig-name descname">tweet</code><a class="headerlink" href="#indexapp.models.TweetIndex.tweet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related object on the forward side of a many-to-one or
+one-to-one (via ForwardOneToOneDescriptor subclass) relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Child.parent</span></code> is a <code class="docutils literal notranslate"><span class="pre">ForwardManyToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.TweetIndex.tweet_id">
+<code class="sig-name descname">tweet_id</code><a class="headerlink" href="#indexapp.models.TweetIndex.tweet_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="indexapp.models.TweetIndexManager">
+<em class="property">class </em><code class="sig-prename descclassname">indexapp.models.</code><code class="sig-name descname">TweetIndexManager</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#indexapp.models.TweetIndexManager" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.manager.Manager</span></code></p>
+<dl class="py method">
+<dt id="indexapp.models.TweetIndexManager.for_terms">
+<code class="sig-name descname">for_terms</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">terms</span></em>, <em class="sig-param"><span class="n">users</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#indexapp.models.TweetIndexManager.for_terms" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="indexapp.models.TweetNPDateIndex">
+<em class="property">class </em><code class="sig-prename descclassname">indexapp.models.</code><code class="sig-name descname">TweetNPDateIndex</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span></em>, <em class="sig-param"><span class="n">term</span></em>, <em class="sig-param"><span class="n">tweet</span></em>, <em class="sig-param"><span class="n">frequency</span></em>, <em class="sig-param"><span class="n">date</span></em><span class="sig-paren">)</span><a class="headerlink" href="#indexapp.models.TweetNPDateIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
+<dl class="py exception">
+<dt id="indexapp.models.TweetNPDateIndex.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#indexapp.models.TweetNPDateIndex.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="indexapp.models.TweetNPDateIndex.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#indexapp.models.TweetNPDateIndex.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.TweetNPDateIndex.date">
+<code class="sig-name descname">date</code><a class="headerlink" href="#indexapp.models.TweetNPDateIndex.date" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.TweetNPDateIndex.frequency">
+<code class="sig-name descname">frequency</code><a class="headerlink" href="#indexapp.models.TweetNPDateIndex.frequency" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="indexapp.models.TweetNPDateIndex.get_next_by_date">
+<code class="sig-name descname">get_next_by_date</code><span class="sig-paren">(</span><em class="sig-param">*</em>, <em class="sig-param">field=&lt;django.db.models.fields.DateTimeField: date&gt;</em>, <em class="sig-param">is_next=True</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#indexapp.models.TweetNPDateIndex.get_next_by_date" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="indexapp.models.TweetNPDateIndex.get_previous_by_date">
+<code class="sig-name descname">get_previous_by_date</code><span class="sig-paren">(</span><em class="sig-param">*</em>, <em class="sig-param">field=&lt;django.db.models.fields.DateTimeField: date&gt;</em>, <em class="sig-param">is_next=False</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#indexapp.models.TweetNPDateIndex.get_previous_by_date" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.TweetNPDateIndex.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#indexapp.models.TweetNPDateIndex.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.TweetNPDateIndex.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#indexapp.models.TweetNPDateIndex.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.TweetNPDateIndex.term">
+<code class="sig-name descname">term</code><a class="headerlink" href="#indexapp.models.TweetNPDateIndex.term" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.TweetNPDateIndex.tweet">
+<code class="sig-name descname">tweet</code><a class="headerlink" href="#indexapp.models.TweetNPDateIndex.tweet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related object on the forward side of a many-to-one or
+one-to-one (via ForwardOneToOneDescriptor subclass) relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Child.parent</span></code> is a <code class="docutils literal notranslate"><span class="pre">ForwardManyToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.TweetNPDateIndex.tweet_id">
+<code class="sig-name descname">tweet_id</code><a class="headerlink" href="#indexapp.models.TweetNPDateIndex.tweet_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="indexapp.models.TweetNPIndex">
+<em class="property">class </em><code class="sig-prename descclassname">indexapp.models.</code><code class="sig-name descname">TweetNPIndex</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span></em>, <em class="sig-param"><span class="n">term</span></em>, <em class="sig-param"><span class="n">tweet</span></em>, <em class="sig-param"><span class="n">frequency</span></em>, <em class="sig-param"><span class="n">tweet_user</span></em><span class="sig-paren">)</span><a class="headerlink" href="#indexapp.models.TweetNPIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
+<dl class="py exception">
+<dt id="indexapp.models.TweetNPIndex.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#indexapp.models.TweetNPIndex.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="indexapp.models.TweetNPIndex.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#indexapp.models.TweetNPIndex.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.TweetNPIndex.frequency">
+<code class="sig-name descname">frequency</code><a class="headerlink" href="#indexapp.models.TweetNPIndex.frequency" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.TweetNPIndex.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#indexapp.models.TweetNPIndex.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.TweetNPIndex.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#indexapp.models.TweetNPIndex.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.TweetNPIndex.term">
+<code class="sig-name descname">term</code><a class="headerlink" href="#indexapp.models.TweetNPIndex.term" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.TweetNPIndex.tweet">
+<code class="sig-name descname">tweet</code><a class="headerlink" href="#indexapp.models.TweetNPIndex.tweet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related object on the forward side of a many-to-one or
+one-to-one (via ForwardOneToOneDescriptor subclass) relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Child.parent</span></code> is a <code class="docutils literal notranslate"><span class="pre">ForwardManyToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.TweetNPIndex.tweet_id">
+<code class="sig-name descname">tweet_id</code><a class="headerlink" href="#indexapp.models.TweetNPIndex.tweet_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="indexapp.models.TweetNPIndex.tweet_user">
+<code class="sig-name descname">tweet_user</code><a class="headerlink" href="#indexapp.models.TweetNPIndex.tweet_user" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-indexapp.tests">
+<span id="indexapp-tests-module"></span><h2>indexapp.tests module<a class="headerlink" href="#module-indexapp.tests" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-indexapp.views">
+<span id="indexapp-views-module"></span><h2>indexapp.views module<a class="headerlink" href="#module-indexapp.views" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-indexapp">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-indexapp" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">index package</a></li>
+      <li>Next: <a href="indexapp.migrations.html" title="next chapter">indexapp.migrations package</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Thomas Huber.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/BUILD/indexapp.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

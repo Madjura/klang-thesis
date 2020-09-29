@@ -1,0 +1,1358 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>trendapp package &#8212; Klang  documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="trendapp.migrations package" href="trendapp.migrations.html" />
+    <link rel="prev" title="titaness package" href="titaness.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="trendapp-package">
+<h1>trendapp package<a class="headerlink" href="#trendapp-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="trendapp.migrations.html">trendapp.migrations package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="trendapp.migrations.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="trendapp.migrations.html#module-trendapp.migrations.0001_initial">trendapp.migrations.0001_initial module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="trendapp.migrations.html#module-trendapp.migrations">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-trendapp.admin">
+<span id="trendapp-admin-module"></span><h2>trendapp.admin module<a class="headerlink" href="#module-trendapp.admin" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-trendapp.apps">
+<span id="trendapp-apps-module"></span><h2>trendapp.apps module<a class="headerlink" href="#module-trendapp.apps" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="trendapp.apps.TrendappConfig">
+<em class="property">class </em><code class="sig-prename descclassname">trendapp.apps.</code><code class="sig-name descname">TrendappConfig</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">app_name</span></em>, <em class="sig-param"><span class="n">app_module</span></em><span class="sig-paren">)</span><a class="headerlink" href="#trendapp.apps.TrendappConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.apps.config.AppConfig</span></code></p>
+<dl class="py attribute">
+<dt id="trendapp.apps.TrendappConfig.name">
+<code class="sig-name descname">name</code><em class="property"> = 'trendapp'</em><a class="headerlink" href="#trendapp.apps.TrendappConfig.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-trendapp.fill_db">
+<span id="trendapp-fill-db-module"></span><h2>trendapp.fill_db module<a class="headerlink" href="#module-trendapp.fill_db" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="trendapp.fill_db.fill_feeds">
+<code class="sig-prename descclassname">trendapp.fill_db.</code><code class="sig-name descname">fill_feeds</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trendapp.fill_db.fill_feeds" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="trendapp.fill_db.fill_tweets">
+<code class="sig-prename descclassname">trendapp.fill_db.</code><code class="sig-name descname">fill_tweets</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">fill_hashtags</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#trendapp.fill_db.fill_tweets" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="trendapp.fill_db.fill_tweets_stores">
+<code class="sig-prename descclassname">trendapp.fill_db.</code><code class="sig-name descname">fill_tweets_stores</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trendapp.fill_db.fill_tweets_stores" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-trendapp.models">
+<span id="trendapp-models-module"></span><h2>trendapp.models module<a class="headerlink" href="#module-trendapp.models" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="trendapp.models.Feed">
+<em class="property">class </em><code class="sig-prename descclassname">trendapp.models.</code><code class="sig-name descname">Feed</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span></em>, <em class="sig-param"><span class="n">channel_title</span></em>, <em class="sig-param"><span class="n">channel_link</span></em>, <em class="sig-param"><span class="n">channel_description</span></em>, <em class="sig-param"><span class="n">channel_language</span></em>, <em class="sig-param"><span class="n">channel_lastBuildDate</span></em>, <em class="sig-param"><span class="n">item_title</span></em>, <em class="sig-param"><span class="n">item_link</span></em>, <em class="sig-param"><span class="n">item_description</span></em>, <em class="sig-param"><span class="n">item_pubDate</span></em>, <em class="sig-param"><span class="n">item_guid</span></em>, <em class="sig-param"><span class="n">topic</span></em>, <em class="sig-param"><span class="n">item_webpage</span></em><span class="sig-paren">)</span><a class="headerlink" href="#trendapp.models.Feed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
+<dl class="py exception">
+<dt id="trendapp.models.Feed.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#trendapp.models.Feed.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="trendapp.models.Feed.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#trendapp.models.Feed.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Feed.channel_description">
+<code class="sig-name descname">channel_description</code><a class="headerlink" href="#trendapp.models.Feed.channel_description" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Feed.channel_language">
+<code class="sig-name descname">channel_language</code><a class="headerlink" href="#trendapp.models.Feed.channel_language" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Feed.channel_lastBuildDate">
+<code class="sig-name descname">channel_lastBuildDate</code><a class="headerlink" href="#trendapp.models.Feed.channel_lastBuildDate" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Feed.channel_link">
+<code class="sig-name descname">channel_link</code><a class="headerlink" href="#trendapp.models.Feed.channel_link" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Feed.channel_title">
+<code class="sig-name descname">channel_title</code><a class="headerlink" href="#trendapp.models.Feed.channel_title" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Feed.feedcontent">
+<code class="sig-name descname">feedcontent</code><a class="headerlink" href="#trendapp.models.Feed.feedcontent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related object on the reverse side of a one-to-one
+relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Restaurant</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">place</span> <span class="o">=</span> <span class="n">OneToOneField</span><span class="p">(</span><span class="n">Place</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;restaurant&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Place.restaurant</span></code> is a <code class="docutils literal notranslate"><span class="pre">ReverseOneToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Feed.feednpdateindex_set">
+<code class="sig-name descname">feednpdateindex_set</code><a class="headerlink" href="#trendapp.models.Feed.feednpdateindex_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related objects manager on the reverse side of a
+many-to-one relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Parent.children</span></code> is a <code class="docutils literal notranslate"><span class="pre">ReverseManyToOneDescriptor</span></code> instance.</p>
+<p>Most of the implementation is delegated to a dynamically defined manager
+class built by <code class="docutils literal notranslate"><span class="pre">create_forward_many_to_many_manager()</span></code> defined below.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Feed.feednpindex_set">
+<code class="sig-name descname">feednpindex_set</code><a class="headerlink" href="#trendapp.models.Feed.feednpindex_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related objects manager on the reverse side of a
+many-to-one relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Parent.children</span></code> is a <code class="docutils literal notranslate"><span class="pre">ReverseManyToOneDescriptor</span></code> instance.</p>
+<p>Most of the implementation is delegated to a dynamically defined manager
+class built by <code class="docutils literal notranslate"><span class="pre">create_forward_many_to_many_manager()</span></code> defined below.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Feed.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#trendapp.models.Feed.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Feed.item_description">
+<code class="sig-name descname">item_description</code><a class="headerlink" href="#trendapp.models.Feed.item_description" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Feed.item_guid">
+<code class="sig-name descname">item_guid</code><a class="headerlink" href="#trendapp.models.Feed.item_guid" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Feed.item_link">
+<code class="sig-name descname">item_link</code><a class="headerlink" href="#trendapp.models.Feed.item_link" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Feed.item_pubDate">
+<code class="sig-name descname">item_pubDate</code><a class="headerlink" href="#trendapp.models.Feed.item_pubDate" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Feed.item_title">
+<code class="sig-name descname">item_title</code><a class="headerlink" href="#trendapp.models.Feed.item_title" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Feed.item_webpage">
+<code class="sig-name descname">item_webpage</code><a class="headerlink" href="#trendapp.models.Feed.item_webpage" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Feed.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;trendapp.models.FeedManager object&gt;</em><a class="headerlink" href="#trendapp.models.Feed.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Feed.topic">
+<code class="sig-name descname">topic</code><a class="headerlink" href="#trendapp.models.Feed.topic" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="trendapp.models.FeedContent">
+<em class="property">class </em><code class="sig-prename descclassname">trendapp.models.</code><code class="sig-name descname">FeedContent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span></em>, <em class="sig-param"><span class="n">feed</span></em>, <em class="sig-param"><span class="n">title</span></em>, <em class="sig-param"><span class="n">content</span></em><span class="sig-paren">)</span><a class="headerlink" href="#trendapp.models.FeedContent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
+<dl class="py exception">
+<dt id="trendapp.models.FeedContent.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#trendapp.models.FeedContent.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="trendapp.models.FeedContent.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#trendapp.models.FeedContent.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.FeedContent.content">
+<code class="sig-name descname">content</code><a class="headerlink" href="#trendapp.models.FeedContent.content" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.FeedContent.feed">
+<code class="sig-name descname">feed</code><a class="headerlink" href="#trendapp.models.FeedContent.feed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related object on the forward side of a one-to-one relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Restaurant</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">place</span> <span class="o">=</span> <span class="n">OneToOneField</span><span class="p">(</span><span class="n">Place</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;restaurant&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Restaurant.place</span></code> is a <code class="docutils literal notranslate"><span class="pre">ForwardOneToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.FeedContent.feed_id">
+<code class="sig-name descname">feed_id</code><a class="headerlink" href="#trendapp.models.FeedContent.feed_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.FeedContent.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#trendapp.models.FeedContent.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.FeedContent.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#trendapp.models.FeedContent.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.FeedContent.title">
+<code class="sig-name descname">title</code><a class="headerlink" href="#trendapp.models.FeedContent.title" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="trendapp.models.FeedManager">
+<em class="property">class </em><code class="sig-prename descclassname">trendapp.models.</code><code class="sig-name descname">FeedManager</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#trendapp.models.FeedManager" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.manager.Manager</span></code></p>
+<dl class="py method">
+<dt id="trendapp.models.FeedManager.by_month">
+<code class="sig-name descname">by_month</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">by_channel</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#trendapp.models.FeedManager.by_month" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="trendapp.models.FeedManager.feed_items_per_channel">
+<code class="sig-name descname">feed_items_per_channel</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#trendapp.models.FeedManager.feed_items_per_channel" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="trendapp.models.Hashtag">
+<em class="property">class </em><code class="sig-prename descclassname">trendapp.models.</code><code class="sig-name descname">Hashtag</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span></em>, <em class="sig-param"><span class="n">tweet</span></em>, <em class="sig-param"><span class="n">beginning</span></em>, <em class="sig-param"><span class="n">end</span></em>, <em class="sig-param"><span class="n">tag</span></em><span class="sig-paren">)</span><a class="headerlink" href="#trendapp.models.Hashtag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
+<dl class="py exception">
+<dt id="trendapp.models.Hashtag.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#trendapp.models.Hashtag.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="trendapp.models.Hashtag.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#trendapp.models.Hashtag.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Hashtag.beginning">
+<code class="sig-name descname">beginning</code><a class="headerlink" href="#trendapp.models.Hashtag.beginning" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Hashtag.end">
+<code class="sig-name descname">end</code><a class="headerlink" href="#trendapp.models.Hashtag.end" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Hashtag.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#trendapp.models.Hashtag.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Hashtag.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#trendapp.models.Hashtag.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Hashtag.tag">
+<code class="sig-name descname">tag</code><a class="headerlink" href="#trendapp.models.Hashtag.tag" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Hashtag.tweet">
+<code class="sig-name descname">tweet</code><a class="headerlink" href="#trendapp.models.Hashtag.tweet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related object on the forward side of a many-to-one or
+one-to-one (via ForwardOneToOneDescriptor subclass) relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Child.parent</span></code> is a <code class="docutils literal notranslate"><span class="pre">ForwardManyToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Hashtag.tweet_id">
+<code class="sig-name descname">tweet_id</code><a class="headerlink" href="#trendapp.models.Hashtag.tweet_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="trendapp.models.Mention">
+<em class="property">class </em><code class="sig-prename descclassname">trendapp.models.</code><code class="sig-name descname">Mention</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span></em>, <em class="sig-param"><span class="n">tweet</span></em>, <em class="sig-param"><span class="n">beginning</span></em>, <em class="sig-param"><span class="n">end</span></em>, <em class="sig-param"><span class="n">screen_name</span></em>, <em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">mention_id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#trendapp.models.Mention" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
+<dl class="py exception">
+<dt id="trendapp.models.Mention.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#trendapp.models.Mention.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="trendapp.models.Mention.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#trendapp.models.Mention.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Mention.beginning">
+<code class="sig-name descname">beginning</code><a class="headerlink" href="#trendapp.models.Mention.beginning" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Mention.end">
+<code class="sig-name descname">end</code><a class="headerlink" href="#trendapp.models.Mention.end" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Mention.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#trendapp.models.Mention.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Mention.mention_id">
+<code class="sig-name descname">mention_id</code><a class="headerlink" href="#trendapp.models.Mention.mention_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Mention.name">
+<code class="sig-name descname">name</code><a class="headerlink" href="#trendapp.models.Mention.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Mention.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#trendapp.models.Mention.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Mention.screen_name">
+<code class="sig-name descname">screen_name</code><a class="headerlink" href="#trendapp.models.Mention.screen_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Mention.tweet">
+<code class="sig-name descname">tweet</code><a class="headerlink" href="#trendapp.models.Mention.tweet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related object on the forward side of a many-to-one or
+one-to-one (via ForwardOneToOneDescriptor subclass) relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Child.parent</span></code> is a <code class="docutils literal notranslate"><span class="pre">ForwardManyToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Mention.tweet_id">
+<code class="sig-name descname">tweet_id</code><a class="headerlink" href="#trendapp.models.Mention.tweet_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="trendapp.models.StoreTweet">
+<em class="property">class </em><code class="sig-prename descclassname">trendapp.models.</code><code class="sig-name descname">StoreTweet</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span></em>, <em class="sig-param"><span class="n">tweet_id</span></em>, <em class="sig-param"><span class="n">created_at</span></em>, <em class="sig-param"><span class="n">text</span></em>, <em class="sig-param"><span class="n">truncated</span></em>, <em class="sig-param"><span class="n">source</span></em>, <em class="sig-param"><span class="n">in_reply_to_status_id</span></em>, <em class="sig-param"><span class="n">in_reply_to_user_id</span></em>, <em class="sig-param"><span class="n">in_reply_to_screen_name</span></em>, <em class="sig-param"><span class="n">user</span></em>, <em class="sig-param"><span class="n">retweet_count</span></em>, <em class="sig-param"><span class="n">favorite_count</span></em>, <em class="sig-param"><span class="n">lang</span></em><span class="sig-paren">)</span><a class="headerlink" href="#trendapp.models.StoreTweet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
+<dl class="py exception">
+<dt id="trendapp.models.StoreTweet.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#trendapp.models.StoreTweet.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="trendapp.models.StoreTweet.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#trendapp.models.StoreTweet.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.StoreTweet.created_at">
+<code class="sig-name descname">created_at</code><a class="headerlink" href="#trendapp.models.StoreTweet.created_at" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.StoreTweet.favorite_count">
+<code class="sig-name descname">favorite_count</code><a class="headerlink" href="#trendapp.models.StoreTweet.favorite_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.StoreTweet.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#trendapp.models.StoreTweet.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.StoreTweet.in_reply_to_screen_name">
+<code class="sig-name descname">in_reply_to_screen_name</code><a class="headerlink" href="#trendapp.models.StoreTweet.in_reply_to_screen_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.StoreTweet.in_reply_to_status_id">
+<code class="sig-name descname">in_reply_to_status_id</code><a class="headerlink" href="#trendapp.models.StoreTweet.in_reply_to_status_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.StoreTweet.in_reply_to_user_id">
+<code class="sig-name descname">in_reply_to_user_id</code><a class="headerlink" href="#trendapp.models.StoreTweet.in_reply_to_user_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.StoreTweet.lang">
+<code class="sig-name descname">lang</code><a class="headerlink" href="#trendapp.models.StoreTweet.lang" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.StoreTweet.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;trendapp.models.TweetManager object&gt;</em><a class="headerlink" href="#trendapp.models.StoreTweet.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.StoreTweet.retweet_count">
+<code class="sig-name descname">retweet_count</code><a class="headerlink" href="#trendapp.models.StoreTweet.retweet_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.StoreTweet.source">
+<code class="sig-name descname">source</code><a class="headerlink" href="#trendapp.models.StoreTweet.source" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.StoreTweet.text">
+<code class="sig-name descname">text</code><a class="headerlink" href="#trendapp.models.StoreTweet.text" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.StoreTweet.truncated">
+<code class="sig-name descname">truncated</code><a class="headerlink" href="#trendapp.models.StoreTweet.truncated" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.StoreTweet.tweet_id">
+<code class="sig-name descname">tweet_id</code><a class="headerlink" href="#trendapp.models.StoreTweet.tweet_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.StoreTweet.user">
+<code class="sig-name descname">user</code><a class="headerlink" href="#trendapp.models.StoreTweet.user" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related object on the forward side of a many-to-one or
+one-to-one (via ForwardOneToOneDescriptor subclass) relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Child.parent</span></code> is a <code class="docutils literal notranslate"><span class="pre">ForwardManyToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.StoreTweet.user_id">
+<code class="sig-name descname">user_id</code><a class="headerlink" href="#trendapp.models.StoreTweet.user_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="trendapp.models.StoreUser">
+<em class="property">class </em><code class="sig-prename descclassname">trendapp.models.</code><code class="sig-name descname">StoreUser</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span></em>, <em class="sig-param"><span class="n">user_id</span></em>, <em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">screen_name</span></em>, <em class="sig-param"><span class="n">location</span></em>, <em class="sig-param"><span class="n">description</span></em>, <em class="sig-param"><span class="n">url</span></em>, <em class="sig-param"><span class="n">protected</span></em>, <em class="sig-param"><span class="n">followers_count</span></em>, <em class="sig-param"><span class="n">friends_count</span></em>, <em class="sig-param"><span class="n">listed_count</span></em>, <em class="sig-param"><span class="n">created_at</span></em>, <em class="sig-param"><span class="n">favourites_count</span></em>, <em class="sig-param"><span class="n">geo_enabled</span></em>, <em class="sig-param"><span class="n">verified</span></em>, <em class="sig-param"><span class="n">statuses_count</span></em>, <em class="sig-param"><span class="n">lang</span></em><span class="sig-paren">)</span><a class="headerlink" href="#trendapp.models.StoreUser" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
+<dl class="py exception">
+<dt id="trendapp.models.StoreUser.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#trendapp.models.StoreUser.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="trendapp.models.StoreUser.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#trendapp.models.StoreUser.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.StoreUser.created_at">
+<code class="sig-name descname">created_at</code><a class="headerlink" href="#trendapp.models.StoreUser.created_at" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.StoreUser.description">
+<code class="sig-name descname">description</code><a class="headerlink" href="#trendapp.models.StoreUser.description" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.StoreUser.favourites_count">
+<code class="sig-name descname">favourites_count</code><a class="headerlink" href="#trendapp.models.StoreUser.favourites_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.StoreUser.followers_count">
+<code class="sig-name descname">followers_count</code><a class="headerlink" href="#trendapp.models.StoreUser.followers_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.StoreUser.friends_count">
+<code class="sig-name descname">friends_count</code><a class="headerlink" href="#trendapp.models.StoreUser.friends_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.StoreUser.geo_enabled">
+<code class="sig-name descname">geo_enabled</code><a class="headerlink" href="#trendapp.models.StoreUser.geo_enabled" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.StoreUser.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#trendapp.models.StoreUser.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.StoreUser.lang">
+<code class="sig-name descname">lang</code><a class="headerlink" href="#trendapp.models.StoreUser.lang" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.StoreUser.listed_count">
+<code class="sig-name descname">listed_count</code><a class="headerlink" href="#trendapp.models.StoreUser.listed_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.StoreUser.location">
+<code class="sig-name descname">location</code><a class="headerlink" href="#trendapp.models.StoreUser.location" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.StoreUser.name">
+<code class="sig-name descname">name</code><a class="headerlink" href="#trendapp.models.StoreUser.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.StoreUser.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;trendapp.models.UserManager object&gt;</em><a class="headerlink" href="#trendapp.models.StoreUser.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.StoreUser.protected">
+<code class="sig-name descname">protected</code><a class="headerlink" href="#trendapp.models.StoreUser.protected" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.StoreUser.screen_name">
+<code class="sig-name descname">screen_name</code><a class="headerlink" href="#trendapp.models.StoreUser.screen_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.StoreUser.statuses_count">
+<code class="sig-name descname">statuses_count</code><a class="headerlink" href="#trendapp.models.StoreUser.statuses_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.StoreUser.storetweet_set">
+<code class="sig-name descname">storetweet_set</code><a class="headerlink" href="#trendapp.models.StoreUser.storetweet_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related objects manager on the reverse side of a
+many-to-one relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Parent.children</span></code> is a <code class="docutils literal notranslate"><span class="pre">ReverseManyToOneDescriptor</span></code> instance.</p>
+<p>Most of the implementation is delegated to a dynamically defined manager
+class built by <code class="docutils literal notranslate"><span class="pre">create_forward_many_to_many_manager()</span></code> defined below.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.StoreUser.url">
+<code class="sig-name descname">url</code><a class="headerlink" href="#trendapp.models.StoreUser.url" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.StoreUser.user_id">
+<code class="sig-name descname">user_id</code><a class="headerlink" href="#trendapp.models.StoreUser.user_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.StoreUser.verified">
+<code class="sig-name descname">verified</code><a class="headerlink" href="#trendapp.models.StoreUser.verified" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="trendapp.models.Tweet">
+<em class="property">class </em><code class="sig-prename descclassname">trendapp.models.</code><code class="sig-name descname">Tweet</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span></em>, <em class="sig-param"><span class="n">tweet_id</span></em>, <em class="sig-param"><span class="n">created_at</span></em>, <em class="sig-param"><span class="n">text</span></em>, <em class="sig-param"><span class="n">truncated</span></em>, <em class="sig-param"><span class="n">source</span></em>, <em class="sig-param"><span class="n">in_reply_to_status_id</span></em>, <em class="sig-param"><span class="n">in_reply_to_user_id</span></em>, <em class="sig-param"><span class="n">in_reply_to_screen_name</span></em>, <em class="sig-param"><span class="n">user</span></em>, <em class="sig-param"><span class="n">retweet_count</span></em>, <em class="sig-param"><span class="n">favorite_count</span></em>, <em class="sig-param"><span class="n">lang</span></em><span class="sig-paren">)</span><a class="headerlink" href="#trendapp.models.Tweet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
+<dl class="py exception">
+<dt id="trendapp.models.Tweet.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#trendapp.models.Tweet.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="trendapp.models.Tweet.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#trendapp.models.Tweet.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Tweet.created_at">
+<code class="sig-name descname">created_at</code><a class="headerlink" href="#trendapp.models.Tweet.created_at" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Tweet.favorite_count">
+<code class="sig-name descname">favorite_count</code><a class="headerlink" href="#trendapp.models.Tweet.favorite_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Tweet.hashtag_set">
+<code class="sig-name descname">hashtag_set</code><a class="headerlink" href="#trendapp.models.Tweet.hashtag_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related objects manager on the reverse side of a
+many-to-one relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Parent.children</span></code> is a <code class="docutils literal notranslate"><span class="pre">ReverseManyToOneDescriptor</span></code> instance.</p>
+<p>Most of the implementation is delegated to a dynamically defined manager
+class built by <code class="docutils literal notranslate"><span class="pre">create_forward_many_to_many_manager()</span></code> defined below.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Tweet.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#trendapp.models.Tweet.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Tweet.in_reply_to_screen_name">
+<code class="sig-name descname">in_reply_to_screen_name</code><a class="headerlink" href="#trendapp.models.Tweet.in_reply_to_screen_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Tweet.in_reply_to_status_id">
+<code class="sig-name descname">in_reply_to_status_id</code><a class="headerlink" href="#trendapp.models.Tweet.in_reply_to_status_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Tweet.in_reply_to_user_id">
+<code class="sig-name descname">in_reply_to_user_id</code><a class="headerlink" href="#trendapp.models.Tweet.in_reply_to_user_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Tweet.lang">
+<code class="sig-name descname">lang</code><a class="headerlink" href="#trendapp.models.Tweet.lang" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Tweet.mention_set">
+<code class="sig-name descname">mention_set</code><a class="headerlink" href="#trendapp.models.Tweet.mention_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related objects manager on the reverse side of a
+many-to-one relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Parent.children</span></code> is a <code class="docutils literal notranslate"><span class="pre">ReverseManyToOneDescriptor</span></code> instance.</p>
+<p>Most of the implementation is delegated to a dynamically defined manager
+class built by <code class="docutils literal notranslate"><span class="pre">create_forward_many_to_many_manager()</span></code> defined below.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Tweet.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;trendapp.models.TweetManager object&gt;</em><a class="headerlink" href="#trendapp.models.Tweet.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Tweet.retweet_count">
+<code class="sig-name descname">retweet_count</code><a class="headerlink" href="#trendapp.models.Tweet.retweet_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Tweet.source">
+<code class="sig-name descname">source</code><a class="headerlink" href="#trendapp.models.Tweet.source" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Tweet.text">
+<code class="sig-name descname">text</code><a class="headerlink" href="#trendapp.models.Tweet.text" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Tweet.truncated">
+<code class="sig-name descname">truncated</code><a class="headerlink" href="#trendapp.models.Tweet.truncated" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Tweet.tweet_id">
+<code class="sig-name descname">tweet_id</code><a class="headerlink" href="#trendapp.models.Tweet.tweet_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Tweet.tweetex">
+<code class="sig-name descname">tweetex</code><a class="headerlink" href="#trendapp.models.Tweet.tweetex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related object on the reverse side of a one-to-one
+relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Restaurant</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">place</span> <span class="o">=</span> <span class="n">OneToOneField</span><span class="p">(</span><span class="n">Place</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;restaurant&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Place.restaurant</span></code> is a <code class="docutils literal notranslate"><span class="pre">ReverseOneToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Tweet.tweetindex_set">
+<code class="sig-name descname">tweetindex_set</code><a class="headerlink" href="#trendapp.models.Tweet.tweetindex_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related objects manager on the reverse side of a
+many-to-one relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Parent.children</span></code> is a <code class="docutils literal notranslate"><span class="pre">ReverseManyToOneDescriptor</span></code> instance.</p>
+<p>Most of the implementation is delegated to a dynamically defined manager
+class built by <code class="docutils literal notranslate"><span class="pre">create_forward_many_to_many_manager()</span></code> defined below.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Tweet.tweetnpdateindex_set">
+<code class="sig-name descname">tweetnpdateindex_set</code><a class="headerlink" href="#trendapp.models.Tweet.tweetnpdateindex_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related objects manager on the reverse side of a
+many-to-one relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Parent.children</span></code> is a <code class="docutils literal notranslate"><span class="pre">ReverseManyToOneDescriptor</span></code> instance.</p>
+<p>Most of the implementation is delegated to a dynamically defined manager
+class built by <code class="docutils literal notranslate"><span class="pre">create_forward_many_to_many_manager()</span></code> defined below.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Tweet.tweetnpindex_set">
+<code class="sig-name descname">tweetnpindex_set</code><a class="headerlink" href="#trendapp.models.Tweet.tweetnpindex_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related objects manager on the reverse side of a
+many-to-one relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Parent.children</span></code> is a <code class="docutils literal notranslate"><span class="pre">ReverseManyToOneDescriptor</span></code> instance.</p>
+<p>Most of the implementation is delegated to a dynamically defined manager
+class built by <code class="docutils literal notranslate"><span class="pre">create_forward_many_to_many_manager()</span></code> defined below.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Tweet.tweeturl_set">
+<code class="sig-name descname">tweeturl_set</code><a class="headerlink" href="#trendapp.models.Tweet.tweeturl_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related objects manager on the reverse side of a
+many-to-one relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Parent.children</span></code> is a <code class="docutils literal notranslate"><span class="pre">ReverseManyToOneDescriptor</span></code> instance.</p>
+<p>Most of the implementation is delegated to a dynamically defined manager
+class built by <code class="docutils literal notranslate"><span class="pre">create_forward_many_to_many_manager()</span></code> defined below.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Tweet.user">
+<code class="sig-name descname">user</code><a class="headerlink" href="#trendapp.models.Tweet.user" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related object on the forward side of a many-to-one or
+one-to-one (via ForwardOneToOneDescriptor subclass) relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Child.parent</span></code> is a <code class="docutils literal notranslate"><span class="pre">ForwardManyToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.Tweet.user_id">
+<code class="sig-name descname">user_id</code><a class="headerlink" href="#trendapp.models.Tweet.user_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="trendapp.models.TweetManager">
+<em class="property">class </em><code class="sig-prename descclassname">trendapp.models.</code><code class="sig-name descname">TweetManager</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#trendapp.models.TweetManager" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.manager.Manager</span></code></p>
+<dl class="py method">
+<dt id="trendapp.models.TweetManager.by_month">
+<code class="sig-name descname">by_month</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">users</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#trendapp.models.TweetManager.by_month" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="trendapp.models.TweetManager.by_week_or_day">
+<code class="sig-name descname">by_week_or_day</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">users</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">week</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#trendapp.models.TweetManager.by_week_or_day" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="trendapp.models.TweetManager.by_year">
+<code class="sig-name descname">by_year</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">users</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#trendapp.models.TweetManager.by_year" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="trendapp.models.TweetManager.for_month">
+<code class="sig-name descname">for_month</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">month</span></em>, <em class="sig-param"><span class="n">users</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#trendapp.models.TweetManager.for_month" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="trendapp.models.TweetManager.for_more_than">
+<code class="sig-name descname">for_more_than</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">limit</span></em><span class="sig-paren">)</span><a class="headerlink" href="#trendapp.models.TweetManager.for_more_than" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="trendapp.models.TweetManager.for_year">
+<code class="sig-name descname">for_year</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">year</span></em>, <em class="sig-param"><span class="n">users</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#trendapp.models.TweetManager.for_year" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="trendapp.models.TweetUrl">
+<em class="property">class </em><code class="sig-prename descclassname">trendapp.models.</code><code class="sig-name descname">TweetUrl</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span></em>, <em class="sig-param"><span class="n">tweet</span></em>, <em class="sig-param"><span class="n">url</span></em>, <em class="sig-param"><span class="n">expanded_url</span></em>, <em class="sig-param"><span class="n">display_url</span></em>, <em class="sig-param"><span class="n">beginning</span></em>, <em class="sig-param"><span class="n">end</span></em><span class="sig-paren">)</span><a class="headerlink" href="#trendapp.models.TweetUrl" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
+<dl class="py exception">
+<dt id="trendapp.models.TweetUrl.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#trendapp.models.TweetUrl.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="trendapp.models.TweetUrl.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#trendapp.models.TweetUrl.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.TweetUrl.beginning">
+<code class="sig-name descname">beginning</code><a class="headerlink" href="#trendapp.models.TweetUrl.beginning" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.TweetUrl.display_url">
+<code class="sig-name descname">display_url</code><a class="headerlink" href="#trendapp.models.TweetUrl.display_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.TweetUrl.end">
+<code class="sig-name descname">end</code><a class="headerlink" href="#trendapp.models.TweetUrl.end" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.TweetUrl.expanded_url">
+<code class="sig-name descname">expanded_url</code><a class="headerlink" href="#trendapp.models.TweetUrl.expanded_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.TweetUrl.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#trendapp.models.TweetUrl.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.TweetUrl.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#trendapp.models.TweetUrl.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.TweetUrl.tweet">
+<code class="sig-name descname">tweet</code><a class="headerlink" href="#trendapp.models.TweetUrl.tweet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related object on the forward side of a many-to-one or
+one-to-one (via ForwardOneToOneDescriptor subclass) relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Child.parent</span></code> is a <code class="docutils literal notranslate"><span class="pre">ForwardManyToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.TweetUrl.tweet_id">
+<code class="sig-name descname">tweet_id</code><a class="headerlink" href="#trendapp.models.TweetUrl.tweet_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.TweetUrl.url">
+<code class="sig-name descname">url</code><a class="headerlink" href="#trendapp.models.TweetUrl.url" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="trendapp.models.User">
+<em class="property">class </em><code class="sig-prename descclassname">trendapp.models.</code><code class="sig-name descname">User</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span></em>, <em class="sig-param"><span class="n">user_id</span></em>, <em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">screen_name</span></em>, <em class="sig-param"><span class="n">location</span></em>, <em class="sig-param"><span class="n">description</span></em>, <em class="sig-param"><span class="n">url</span></em>, <em class="sig-param"><span class="n">protected</span></em>, <em class="sig-param"><span class="n">followers_count</span></em>, <em class="sig-param"><span class="n">friends_count</span></em>, <em class="sig-param"><span class="n">listed_count</span></em>, <em class="sig-param"><span class="n">created_at</span></em>, <em class="sig-param"><span class="n">favourites_count</span></em>, <em class="sig-param"><span class="n">geo_enabled</span></em>, <em class="sig-param"><span class="n">verified</span></em>, <em class="sig-param"><span class="n">statuses_count</span></em>, <em class="sig-param"><span class="n">lang</span></em><span class="sig-paren">)</span><a class="headerlink" href="#trendapp.models.User" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
+<dl class="py exception">
+<dt id="trendapp.models.User.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#trendapp.models.User.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="trendapp.models.User.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#trendapp.models.User.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.User.created_at">
+<code class="sig-name descname">created_at</code><a class="headerlink" href="#trendapp.models.User.created_at" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.User.description">
+<code class="sig-name descname">description</code><a class="headerlink" href="#trendapp.models.User.description" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.User.favourites_count">
+<code class="sig-name descname">favourites_count</code><a class="headerlink" href="#trendapp.models.User.favourites_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.User.followers_count">
+<code class="sig-name descname">followers_count</code><a class="headerlink" href="#trendapp.models.User.followers_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.User.friends_count">
+<code class="sig-name descname">friends_count</code><a class="headerlink" href="#trendapp.models.User.friends_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.User.geo_enabled">
+<code class="sig-name descname">geo_enabled</code><a class="headerlink" href="#trendapp.models.User.geo_enabled" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.User.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#trendapp.models.User.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.User.lang">
+<code class="sig-name descname">lang</code><a class="headerlink" href="#trendapp.models.User.lang" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.User.listed_count">
+<code class="sig-name descname">listed_count</code><a class="headerlink" href="#trendapp.models.User.listed_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.User.location">
+<code class="sig-name descname">location</code><a class="headerlink" href="#trendapp.models.User.location" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.User.name">
+<code class="sig-name descname">name</code><a class="headerlink" href="#trendapp.models.User.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.User.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;trendapp.models.UserManager object&gt;</em><a class="headerlink" href="#trendapp.models.User.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.User.protected">
+<code class="sig-name descname">protected</code><a class="headerlink" href="#trendapp.models.User.protected" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.User.screen_name">
+<code class="sig-name descname">screen_name</code><a class="headerlink" href="#trendapp.models.User.screen_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.User.statuses_count">
+<code class="sig-name descname">statuses_count</code><a class="headerlink" href="#trendapp.models.User.statuses_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.User.tweet_set">
+<code class="sig-name descname">tweet_set</code><a class="headerlink" href="#trendapp.models.User.tweet_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related objects manager on the reverse side of a
+many-to-one relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">ForeignKey</span><span class="p">(</span><span class="n">Parent</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;children&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Parent.children</span></code> is a <code class="docutils literal notranslate"><span class="pre">ReverseManyToOneDescriptor</span></code> instance.</p>
+<p>Most of the implementation is delegated to a dynamically defined manager
+class built by <code class="docutils literal notranslate"><span class="pre">create_forward_many_to_many_manager()</span></code> defined below.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.User.url">
+<code class="sig-name descname">url</code><a class="headerlink" href="#trendapp.models.User.url" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.User.user_id">
+<code class="sig-name descname">user_id</code><a class="headerlink" href="#trendapp.models.User.user_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.User.userex">
+<code class="sig-name descname">userex</code><a class="headerlink" href="#trendapp.models.User.userex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Accessor to the related object on the reverse side of a one-to-one
+relation.</p>
+<p>In the example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Restaurant</span><span class="p">(</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">place</span> <span class="o">=</span> <span class="n">OneToOneField</span><span class="p">(</span><span class="n">Place</span><span class="p">,</span> <span class="n">related_name</span><span class="o">=</span><span class="s1">&#39;restaurant&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">Place.restaurant</span></code> is a <code class="docutils literal notranslate"><span class="pre">ReverseOneToOneDescriptor</span></code> instance.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="trendapp.models.User.verified">
+<code class="sig-name descname">verified</code><a class="headerlink" href="#trendapp.models.User.verified" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="trendapp.models.UserManager">
+<em class="property">class </em><code class="sig-prename descclassname">trendapp.models.</code><code class="sig-name descname">UserManager</code><span class="sig-paren">(</span><em class="sig-param"><span class="o">*</span><span class="n">args</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#trendapp.models.UserManager" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.manager.Manager</span></code></p>
+<dl class="py method">
+<dt id="trendapp.models.UserManager.top_tweeters">
+<code class="sig-name descname">top_tweeters</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cutoff</span><span class="o">=</span><span class="default_value">3000</span></em><span class="sig-paren">)</span><a class="headerlink" href="#trendapp.models.UserManager.top_tweeters" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="trendapp.models.UserManager.tweet_count_users">
+<code class="sig-name descname">tweet_count_users</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">users</span></em><span class="sig-paren">)</span><a class="headerlink" href="#trendapp.models.UserManager.tweet_count_users" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="trendapp.models.month_first">
+<code class="sig-prename descclassname">trendapp.models.</code><code class="sig-name descname">month_first</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">day</span></em><span class="sig-paren">)</span><a class="headerlink" href="#trendapp.models.month_first" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="trendapp.models.month_last">
+<code class="sig-prename descclassname">trendapp.models.</code><code class="sig-name descname">month_last</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">day</span></em><span class="sig-paren">)</span><a class="headerlink" href="#trendapp.models.month_last" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-trendapp.tests">
+<span id="trendapp-tests-module"></span><h2>trendapp.tests module<a class="headerlink" href="#module-trendapp.tests" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-trendapp">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-trendapp" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">titaness-thesis</a><ul>
+      <li>Previous: <a href="titaness.html" title="previous chapter">titaness package</a></li>
+      <li>Next: <a href="trendapp.migrations.html" title="next chapter">trendapp.migrations package</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Thomas Huber.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/BUILD/trendapp.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
