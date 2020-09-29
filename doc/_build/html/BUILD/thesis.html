@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>thesis package &#8212; Klang  documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="titaness package" href="titaness.html" />
+    <link rel="prev" title="text package" href="text.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="thesis-package">
+<h1>thesis package<a class="headerlink" href="#thesis-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-thesis.db_dump">
+<span id="thesis-db-dump-module"></span><h2>thesis.db_dump module<a class="headerlink" href="#module-thesis.db_dump" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="thesis.db_dump.dump_tweets">
+<code class="sig-prename descclassname">thesis.db_dump.</code><code class="sig-name descname">dump_tweets</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#thesis.db_dump.dump_tweets" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="thesis.db_dump.load_dump">
+<code class="sig-prename descclassname">thesis.db_dump.</code><code class="sig-name descname">load_dump</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#thesis.db_dump.load_dump" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-thesis.spike_thesis">
+<span id="thesis-spike-thesis-module"></span><h2>thesis.spike_thesis module<a class="headerlink" href="#module-thesis.spike_thesis" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="thesis.spike_thesis.assign_kws">
+<code class="sig-prename descclassname">thesis.spike_thesis.</code><code class="sig-name descname">assign_kws</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">users</span></em>, <em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">'kws-titaness-thesis'</span></em>, <em class="sig-param"><span class="n">do_old</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#thesis.spike_thesis.assign_kws" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="thesis.spike_thesis.create_klang_input">
+<code class="sig-prename descclassname">thesis.spike_thesis.</code><code class="sig-name descname">create_klang_input</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">relevant</span></em>, <em class="sig-param"><span class="n">limit</span><span class="o">=</span><span class="default_value">3</span></em><span class="sig-paren">)</span><a class="headerlink" href="#thesis.spike_thesis.create_klang_input" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates KlangInput for spIke model.
+:param relevant:
+:param limit:
+:return:</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="thesis.spike_thesis.create_klang_input_spike_month">
+<code class="sig-prename descclassname">thesis.spike_thesis.</code><code class="sig-name descname">create_klang_input_spike_month</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">relevant</span></em>, <em class="sig-param"><span class="n">limit</span><span class="o">=</span><span class="default_value">3</span></em><span class="sig-paren">)</span><a class="headerlink" href="#thesis.spike_thesis.create_klang_input_spike_month" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates spIke month input for Klang algorithm.
+:param relevant:
+:param limit:
+:return:</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="thesis.spike_thesis.create_models">
+<code class="sig-prename descclassname">thesis.spike_thesis.</code><code class="sig-name descname">create_models</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">relevant</span></em><span class="sig-paren">)</span><a class="headerlink" href="#thesis.spike_thesis.create_models" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="thesis.spike_thesis.create_models_spike_month">
+<code class="sig-prename descclassname">thesis.spike_thesis.</code><code class="sig-name descname">create_models_spike_month</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">relevant</span></em><span class="sig-paren">)</span><a class="headerlink" href="#thesis.spike_thesis.create_models_spike_month" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates spIke model for monthly timerange.
+:param relevant:
+:return:</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="thesis.spike_thesis.imdb_thesis_output">
+<code class="sig-prename descclassname">thesis.spike_thesis.</code><code class="sig-name descname">imdb_thesis_output</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#thesis.spike_thesis.imdb_thesis_output" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="thesis.spike_thesis.klang_spike_fix_thesis_output">
+<code class="sig-prename descclassname">thesis.spike_thesis.</code><code class="sig-name descname">klang_spike_fix_thesis_output</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">'kws-spike-thesis-fix'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#thesis.spike_thesis.klang_spike_fix_thesis_output" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="thesis.spike_thesis.klang_spike_month_thesis_output">
+<code class="sig-prename descclassname">thesis.spike_thesis.</code><code class="sig-name descname">klang_spike_month_thesis_output</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">'kws-spike-thesis-month'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#thesis.spike_thesis.klang_spike_month_thesis_output" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="thesis.spike_thesis.klang_thesis">
+<code class="sig-prename descclassname">thesis.spike_thesis.</code><code class="sig-name descname">klang_thesis</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">'kws-titaness-thesis'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#thesis.spike_thesis.klang_thesis" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="thesis.spike_thesis.klang_thesis_output">
+<code class="sig-prename descclassname">thesis.spike_thesis.</code><code class="sig-name descname">klang_thesis_output</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">'kws-titaness-thesis'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#thesis.spike_thesis.klang_thesis_output" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="thesis.spike_thesis.tfidf_kws">
+<code class="sig-prename descclassname">thesis.spike_thesis.</code><code class="sig-name descname">tfidf_kws</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">relevant</span></em><span class="sig-paren">)</span><a class="headerlink" href="#thesis.spike_thesis.tfidf_kws" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="thesis.spike_thesis.vis">
+<code class="sig-prename descclassname">thesis.spike_thesis.</code><code class="sig-name descname">vis</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#thesis.spike_thesis.vis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Visualizes Tweet frequency over time.
+:return:</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-thesis">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-thesis" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">titaness-thesis</a><ul>
+      <li>Previous: <a href="text.html" title="previous chapter">text package</a></li>
+      <li>Next: <a href="titaness.html" title="next chapter">titaness package</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Thomas Huber.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/BUILD/thesis.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

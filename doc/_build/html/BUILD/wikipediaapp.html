@@ -1,0 +1,461 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>wikipediaapp package &#8212; Klang  documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="wikipediaapp.migrations package" href="wikipediaapp.migrations.html" />
+    <link rel="prev" title="twitter_titaness package" href="twitter_titaness.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="wikipediaapp-package">
+<h1>wikipediaapp package<a class="headerlink" href="#wikipediaapp-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="wikipediaapp.migrations.html">wikipediaapp.migrations package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="wikipediaapp.migrations.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wikipediaapp.migrations.html#module-wikipediaapp.migrations.0001_initial">wikipediaapp.migrations.0001_initial module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wikipediaapp.migrations.html#module-wikipediaapp.migrations">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-wikipediaapp.admin">
+<span id="wikipediaapp-admin-module"></span><h2>wikipediaapp.admin module<a class="headerlink" href="#module-wikipediaapp.admin" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-wikipediaapp.apps">
+<span id="wikipediaapp-apps-module"></span><h2>wikipediaapp.apps module<a class="headerlink" href="#module-wikipediaapp.apps" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="wikipediaapp.apps.WikipediaappConfig">
+<em class="property">class </em><code class="sig-prename descclassname">wikipediaapp.apps.</code><code class="sig-name descname">WikipediaappConfig</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">app_name</span></em>, <em class="sig-param"><span class="n">app_module</span></em><span class="sig-paren">)</span><a class="headerlink" href="#wikipediaapp.apps.WikipediaappConfig" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.apps.config.AppConfig</span></code></p>
+<dl class="py attribute">
+<dt id="wikipediaapp.apps.WikipediaappConfig.name">
+<code class="sig-name descname">name</code><em class="property"> = 'wikipediaapp'</em><a class="headerlink" href="#wikipediaapp.apps.WikipediaappConfig.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-wikipediaapp.models">
+<span id="wikipediaapp-models-module"></span><h2>wikipediaapp.models module<a class="headerlink" href="#module-wikipediaapp.models" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="wikipediaapp.models.CoN">
+<em class="property">class </em><code class="sig-prename descclassname">wikipediaapp.models.</code><code class="sig-name descname">CoN</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">w1_id</span></em>, <em class="sig-param"><span class="n">w2_id</span></em>, <em class="sig-param"><span class="n">freq</span></em>, <em class="sig-param"><span class="n">sig</span></em><span class="sig-paren">)</span><a class="headerlink" href="#wikipediaapp.models.CoN" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
+<dl class="py exception">
+<dt id="wikipediaapp.models.CoN.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#wikipediaapp.models.CoN.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="wikipediaapp.models.CoN.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#wikipediaapp.models.CoN.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wikipediaapp.models.CoN.freq">
+<code class="sig-name descname">freq</code><a class="headerlink" href="#wikipediaapp.models.CoN.freq" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wikipediaapp.models.CoN.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#wikipediaapp.models.CoN.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="wikipediaapp.models.CoN.sig">
+<code class="sig-name descname">sig</code><a class="headerlink" href="#wikipediaapp.models.CoN.sig" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wikipediaapp.models.CoN.w1_id">
+<code class="sig-name descname">w1_id</code><a class="headerlink" href="#wikipediaapp.models.CoN.w1_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wikipediaapp.models.CoN.w2_id">
+<code class="sig-name descname">w2_id</code><a class="headerlink" href="#wikipediaapp.models.CoN.w2_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="wikipediaapp.models.CoS">
+<em class="property">class </em><code class="sig-prename descclassname">wikipediaapp.models.</code><code class="sig-name descname">CoS</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">w1_id</span></em>, <em class="sig-param"><span class="n">w2_id</span></em>, <em class="sig-param"><span class="n">freq</span></em>, <em class="sig-param"><span class="n">sig</span></em><span class="sig-paren">)</span><a class="headerlink" href="#wikipediaapp.models.CoS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
+<dl class="py exception">
+<dt id="wikipediaapp.models.CoS.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#wikipediaapp.models.CoS.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="wikipediaapp.models.CoS.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#wikipediaapp.models.CoS.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wikipediaapp.models.CoS.freq">
+<code class="sig-name descname">freq</code><a class="headerlink" href="#wikipediaapp.models.CoS.freq" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wikipediaapp.models.CoS.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#wikipediaapp.models.CoS.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="wikipediaapp.models.CoS.sig">
+<code class="sig-name descname">sig</code><a class="headerlink" href="#wikipediaapp.models.CoS.sig" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wikipediaapp.models.CoS.w1_id">
+<code class="sig-name descname">w1_id</code><a class="headerlink" href="#wikipediaapp.models.CoS.w1_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wikipediaapp.models.CoS.w2_id">
+<code class="sig-name descname">w2_id</code><a class="headerlink" href="#wikipediaapp.models.CoS.w2_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="wikipediaapp.models.InvSo">
+<em class="property">class </em><code class="sig-prename descclassname">wikipediaapp.models.</code><code class="sig-name descname">InvSo</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span></em>, <em class="sig-param"><span class="n">so_id</span></em>, <em class="sig-param"><span class="n">s_id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#wikipediaapp.models.InvSo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
+<dl class="py exception">
+<dt id="wikipediaapp.models.InvSo.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#wikipediaapp.models.InvSo.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="wikipediaapp.models.InvSo.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#wikipediaapp.models.InvSo.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wikipediaapp.models.InvSo.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#wikipediaapp.models.InvSo.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wikipediaapp.models.InvSo.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#wikipediaapp.models.InvSo.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="wikipediaapp.models.InvSo.s_id">
+<code class="sig-name descname">s_id</code><a class="headerlink" href="#wikipediaapp.models.InvSo.s_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wikipediaapp.models.InvSo.so_id">
+<code class="sig-name descname">so_id</code><a class="headerlink" href="#wikipediaapp.models.InvSo.so_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="wikipediaapp.models.InvW">
+<em class="property">class </em><code class="sig-prename descclassname">wikipediaapp.models.</code><code class="sig-name descname">InvW</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">id</span></em>, <em class="sig-param"><span class="n">w_id</span></em>, <em class="sig-param"><span class="n">s_id</span></em>, <em class="sig-param"><span class="n">pos</span></em><span class="sig-paren">)</span><a class="headerlink" href="#wikipediaapp.models.InvW" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
+<dl class="py exception">
+<dt id="wikipediaapp.models.InvW.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#wikipediaapp.models.InvW.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="wikipediaapp.models.InvW.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#wikipediaapp.models.InvW.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wikipediaapp.models.InvW.id">
+<code class="sig-name descname">id</code><a class="headerlink" href="#wikipediaapp.models.InvW.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wikipediaapp.models.InvW.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#wikipediaapp.models.InvW.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="wikipediaapp.models.InvW.pos">
+<code class="sig-name descname">pos</code><a class="headerlink" href="#wikipediaapp.models.InvW.pos" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wikipediaapp.models.InvW.s_id">
+<code class="sig-name descname">s_id</code><a class="headerlink" href="#wikipediaapp.models.InvW.s_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wikipediaapp.models.InvW.w_id">
+<code class="sig-name descname">w_id</code><a class="headerlink" href="#wikipediaapp.models.InvW.w_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="wikipediaapp.models.Sentences">
+<em class="property">class </em><code class="sig-prename descclassname">wikipediaapp.models.</code><code class="sig-name descname">Sentences</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">s_id</span></em>, <em class="sig-param"><span class="n">sentence</span></em><span class="sig-paren">)</span><a class="headerlink" href="#wikipediaapp.models.Sentences" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
+<dl class="py exception">
+<dt id="wikipediaapp.models.Sentences.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#wikipediaapp.models.Sentences.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="wikipediaapp.models.Sentences.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#wikipediaapp.models.Sentences.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wikipediaapp.models.Sentences.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#wikipediaapp.models.Sentences.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="wikipediaapp.models.Sentences.s_id">
+<code class="sig-name descname">s_id</code><a class="headerlink" href="#wikipediaapp.models.Sentences.s_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wikipediaapp.models.Sentences.sentence">
+<code class="sig-name descname">sentence</code><a class="headerlink" href="#wikipediaapp.models.Sentences.sentence" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="wikipediaapp.models.Sources">
+<em class="property">class </em><code class="sig-prename descclassname">wikipediaapp.models.</code><code class="sig-name descname">Sources</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">so_id</span></em>, <em class="sig-param"><span class="n">source</span></em>, <em class="sig-param"><span class="n">date</span></em><span class="sig-paren">)</span><a class="headerlink" href="#wikipediaapp.models.Sources" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
+<dl class="py exception">
+<dt id="wikipediaapp.models.Sources.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#wikipediaapp.models.Sources.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="wikipediaapp.models.Sources.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#wikipediaapp.models.Sources.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wikipediaapp.models.Sources.date">
+<code class="sig-name descname">date</code><a class="headerlink" href="#wikipediaapp.models.Sources.date" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wikipediaapp.models.Sources.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#wikipediaapp.models.Sources.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="wikipediaapp.models.Sources.so_id">
+<code class="sig-name descname">so_id</code><a class="headerlink" href="#wikipediaapp.models.Sources.so_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wikipediaapp.models.Sources.source">
+<code class="sig-name descname">source</code><a class="headerlink" href="#wikipediaapp.models.Sources.source" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="wikipediaapp.models.Words">
+<em class="property">class </em><code class="sig-prename descclassname">wikipediaapp.models.</code><code class="sig-name descname">Words</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">w_id</span></em>, <em class="sig-param"><span class="n">word</span></em>, <em class="sig-param"><span class="n">word_ci</span></em>, <em class="sig-param"><span class="n">freq</span></em><span class="sig-paren">)</span><a class="headerlink" href="#wikipediaapp.models.Words" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.db.models.base.Model</span></code></p>
+<dl class="py exception">
+<dt id="wikipediaapp.models.Words.DoesNotExist">
+<em class="property">exception </em><code class="sig-name descname">DoesNotExist</code><a class="headerlink" href="#wikipediaapp.models.Words.DoesNotExist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt id="wikipediaapp.models.Words.MultipleObjectsReturned">
+<em class="property">exception </em><code class="sig-name descname">MultipleObjectsReturned</code><a class="headerlink" href="#wikipediaapp.models.Words.MultipleObjectsReturned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">django.core.exceptions.MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wikipediaapp.models.Words.freq">
+<code class="sig-name descname">freq</code><a class="headerlink" href="#wikipediaapp.models.Words.freq" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wikipediaapp.models.Words.objects">
+<code class="sig-name descname">objects</code><em class="property"> = &lt;django.db.models.manager.Manager object&gt;</em><a class="headerlink" href="#wikipediaapp.models.Words.objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="wikipediaapp.models.Words.w_id">
+<code class="sig-name descname">w_id</code><a class="headerlink" href="#wikipediaapp.models.Words.w_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wikipediaapp.models.Words.word">
+<code class="sig-name descname">word</code><a class="headerlink" href="#wikipediaapp.models.Words.word" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="wikipediaapp.models.Words.word_ci">
+<code class="sig-name descname">word_ci</code><a class="headerlink" href="#wikipediaapp.models.Words.word_ci" title="Permalink to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-wikipediaapp.tests">
+<span id="wikipediaapp-tests-module"></span><h2>wikipediaapp.tests module<a class="headerlink" href="#module-wikipediaapp.tests" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-wikipediaapp.views">
+<span id="wikipediaapp-views-module"></span><h2>wikipediaapp.views module<a class="headerlink" href="#module-wikipediaapp.views" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-wikipediaapp">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-wikipediaapp" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">titaness-thesis</a><ul>
+      <li>Previous: <a href="twitter_titaness.html" title="previous chapter">twitter_titaness package</a></li>
+      <li>Next: <a href="wikipediaapp.migrations.html" title="next chapter">wikipediaapp.migrations package</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Thomas Huber.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/BUILD/wikipediaapp.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
