@@ -7,26 +7,30 @@ import dill
 from klang.klang_algorithm import init_klang
 
 
+#########################################
+# CAN BE FOUND IN "klang_inputs_raw.zip"#
+#########################################
 def load_imdb_data():
-    with open("../files/imdb_data.p", "rb") as f:
+    with open("../klang_inputs_raw/klang_imdb_input.p", "rb") as f:
         data = pickle.load(f)
     return data
 
 
 def spike_titaness():
-    with open("../files/KLANG_SPIKE_TITANESS.p", "rb") as f:
+    with open("../klang_inputs_raw/klang_spike_week_input.p", "rb") as f:
         data = dill.load(f)
     return data
 
 
 def spike_titaness_month():
-    with open("../files/KLANG_SPIKE_MONTH_TITANESS.p", "rb") as f:
+    with open("../klang_inputs_raw/klang_spike_month_input.p", "rb") as f:
         data = dill.load(f)
     return data
 
 
 if __name__ == "__main__":
-    _data = load_imdb_data(); _out_name = "IMDB-TESTESTEST"
+    _data = load_imdb_data();
+    _out_name = "IMDB-TESTESTEST"
     _data = spike_titaness_month()
 
     # ADJUST PATHS

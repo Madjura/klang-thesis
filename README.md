@@ -31,6 +31,8 @@ Continue reading for where to find the various algorithms and files required to 
 ### Klang algorithm
 To run the Klang algorithm use `main.py` in the `klang` package.
 Load suitable models, paths are provided, or generate one with spIke or tf-idf approach.
+The raw inputs used in the thesis can be found in `klang_inputs_raw.zip`.
+
 
 ### spIke algorithm
 To run the spIke algorithm see `thesis/spike_thesis.py`.
