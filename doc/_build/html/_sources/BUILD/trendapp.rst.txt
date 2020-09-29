@@ -5,57 +5,57 @@ Subpackages
 -----------
 
 .. toctree::
+   :maxdepth: 4
 
-    trendapp.migrations
+   trendapp.migrations
 
 Submodules
 ----------
 
-trendapp\.admin module
-----------------------
-
-.. automodule:: trendapp.admin
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-trendapp\.apps module
+trendapp.admin module
 ---------------------
 
-.. automodule:: trendapp.apps
-    :members:
-    :undoc-members:
-    :show-inheritance:
+.. automodule:: trendapp.admin
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
-trendapp\.fill\_db module
--------------------------
+trendapp.apps module
+--------------------
+
+.. automodule:: trendapp.apps
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+trendapp.fill\_db module
+------------------------
 
 .. automodule:: trendapp.fill_db
-    :members:
-    :undoc-members:
-    :show-inheritance:
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
-trendapp\.models module
------------------------
-
-.. automodule:: trendapp.models
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-trendapp\.tests module
+trendapp.models module
 ----------------------
 
-.. automodule:: trendapp.tests
-    :members:
-    :undoc-members:
-    :show-inheritance:
+.. automodule:: trendapp.models
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
+trendapp.tests module
+---------------------
+
+.. automodule:: trendapp.tests
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
 Module contents
 ---------------
 
 .. automodule:: trendapp
-    :members:
-    :undoc-members:
-    :show-inheritance:
+   :members:
+   :undoc-members:
+   :show-inheritance:

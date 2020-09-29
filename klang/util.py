@@ -157,10 +157,3 @@ def get_relation_count(kw, input_rel):
             regular = input_rel["DATES"]["REGULAR"][q][r].get(kw, list())
             total += len(inverse) + len(regular)
     return total
-
-
-def check_equivalency(kw1, kw2, input_rel):
-    equi1 = get_equivalents(kw1, input_rel)
-    equi2 = get_equivalents(kw2, input_rel)
-
-

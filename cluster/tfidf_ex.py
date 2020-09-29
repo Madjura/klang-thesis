@@ -54,6 +54,12 @@ def preprocess(texts, nlp=None):
 
 
 def cluster_tweets_external(texts: PreprocessedText, top=3):
+    """
+    Clusters Tweets, from preprocessed texts in db.
+    :param texts: PreprocessedText objects representing the texts.
+    :param top: The number of keywords to assign to each clusters.
+    :return: The ClusterResult representing the result.
+    """
     keywords, tfidf, m = cluster(texts.texts, identifier=f"Tweets for {texts.name}", plot=False, top=top)
     c, _created = ClusterResult.objects.get_or_create(name=texts.name, nouns_only=True, external=True, texts=texts)
     c.keywords = keywords
@@ -64,6 +70,14 @@ def cluster_tweets_external(texts: PreprocessedText, top=3):
 
 
 def assign_kws_to_tweets_external(clusters: [ClusterResult], name: str, lang="en", pr=None):
+    """
+    Assigns KWs to Tweets, uses the database.
+    :param clusters: ClusterResult objects representing the topic clusters.
+    :param name: The name of the output.
+    :param lang: The language of the texts.
+    :param pr: Can be used to record progress for long running tasks.
+    :return: Nothing, results are stored in database as KlangInput instances.
+    """
     nlp = get_spacy_model(lang=lang)
     relations = KlangRelationsFix()
     for i, cluster_obj in enumerate(clusters):
@@ -100,16 +114,9 @@ def assign_kws_to_tweets_external(clusters: [ClusterResult], name: str, lang="en
 
 
 if __name__ == "__main__":
-    # PreprocessedText.objects.filter(name="sha_hsg").delete()
-    # foo = PreprocessedText.objects.filter(name="sha_hsg")[0]
-
+    # preprocess tweets
     _t = preprocess_tweets_ex("sha_hsg")
+    # then cluster
     _c = cluster_tweets_external(_t)
+    # then assign keywords
     assign_kws_to_tweets_external([_c], "Experiment")
-    # _k = KlangInput.objects.get(name="Experiment")
-    # print(_k)
-    # s = time.time()
-    # _o = init_klang(_k.model.relations, "sha_hsgEXPERIMENT", shared_percentile=75, all_keywords=True, shared_percentile_ambi=95)
-    # _r = default_to_regular(_o.relations)
-    # print(time.time() - s)
-    # KlangOutput.objects.create(klang_input=_k, relations=_r)

@@ -4,19 +4,18 @@ crawl package
 Submodules
 ----------
 
-crawl\.tweets module
---------------------
+crawl.tweets module
+-------------------
 
 .. automodule:: crawl.tweets
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
 Module contents
 ---------------
 
 .. automodule:: crawl
-    :members:
-    :undoc-members:
-    :show-inheritance:
+   :members:
+   :undoc-members:
+   :show-inheritance:

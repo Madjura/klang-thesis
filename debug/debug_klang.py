@@ -9,6 +9,12 @@ def _connected_by_relation(node, data, relation, direction="REGULAR"):
 
 
 def generate_klang_graph(node, data):
+    """
+    Generates a graph output of the Klang algorithm, in .json format.
+    :param node: The term for which the relations are to be visualized.
+    :param data: The Klang output data.
+    :return: A graph of the keyword showing its relations found by the Klang algorithm, in .json format.
+    """
     # node = "nxxxx"
     # for "normal" graph
     nodes = []

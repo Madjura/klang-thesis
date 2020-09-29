@@ -18,6 +18,13 @@ from klangapp.models import ClusterResult
 
 
 def preprocess(texts, nlp=None):
+    """
+    Preprocesses texts used in the tf-idf approach.
+    Removes hashtags, URLs, numbers, ...
+    :param texts: A list of texts.
+    :param nlp: The spaCy object used to split the texts into tokens.
+    :return: The texts, but preprocessed.
+    """
     texts = [x for x in texts if x]
     if nlp is None:
         nlp = get_spacy_model(lang="en")
@@ -37,6 +44,12 @@ def preprocess(texts, nlp=None):
 
 
 def tokenize_only(text):
+    """
+    Tokenizer used for the TfIdfVectorizer.
+    Filters out any empty tokens.
+    :param text: The text.
+    :return: The filtered text.
+    """
     # first tokenize by sentence, then by word to ensure that punctuation is caught as its own token
     tokens = [word.lower() for sent in sent_tokenize(text) for word in word_tokenize(sent)]
     filtered_tokens = []
@@ -51,8 +64,9 @@ def assign_kws_to_tweets(nouns_only):
     """
     tf-idf approach for all Twitter users.
     Creates Klang output that can be used as input for Klang.
-    :param nouns_only:
-    :return:
+    :param nouns_only: Whether only nouns should be used.
+    :return: Nothing. Writes a .pickle field containing the relations that can be used as input for the Klang
+        algorithm to the disk.
     """
     users = sorted(set(Tweet.objects.filter(text__isnull=False).select_related("user__name")
                        .values_list("user__name", flat=True)))
@@ -70,7 +84,6 @@ def assign_kws_to_tweets(nouns_only):
         tfidf = r.vectorizer
         tfidf.tokenizer = tokenize_only
         m = r.clusterer
-
         # data_dir_path = os.path.join(DATA_DIR, "CLUSTER", "tweets", f"{user}")
         # try:
         #     with open(os.path.join(data_dir_path, f"keywords_TWEETS_{user}_{nouns_only}.p"), "rb") as f:
@@ -82,7 +95,6 @@ def assign_kws_to_tweets(nouns_only):
         # tfidf.tokenizer = tokenize_only
         # with open(os.path.join(data_dir_path, f"mbatch_{user}_{nouns_only}.p"), "rb") as f:
         #     m = dill.load(f)
-
         for tweet in tweets:
             text = preprocess([tweet.text], nlp=nlp)
             text = tfidf.transform(text)

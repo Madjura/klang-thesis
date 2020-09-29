@@ -137,6 +137,13 @@ def twitter_stuff(user, api, existing=None):
 
 
 def crawl_and_store_tweets(pr=None):
+    """
+    Pulls Tweets from Twitter API and saves them to database.
+
+    !!! You need a Twitter dev account for this and to set the API key etc. in settings.py !!!
+    :param pr:
+    :return:
+    """
     api = twitter.Api(consumer_key=TWITTER_KEY,
                       consumer_secret=TWITTER_SECRET,
                       access_token_key=TWITTER_ACCESS_TOKEN,
@@ -157,4 +164,5 @@ def crawl_and_store_tweets(pr=None):
 
 
 if __name__ == '__main__':
+    # you need to get a Twitter developer account first and set the API key etc. in settings.py
     crawl_and_store_tweets()

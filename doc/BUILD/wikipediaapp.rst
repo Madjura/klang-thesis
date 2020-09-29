@@ -5,57 +5,57 @@ Subpackages
 -----------
 
 .. toctree::
+   :maxdepth: 4
 
-    wikipediaapp.migrations
+   wikipediaapp.migrations
 
 Submodules
 ----------
 
-wikipediaapp\.admin module
---------------------------
-
-.. automodule:: wikipediaapp.admin
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
-wikipediaapp\.apps module
+wikipediaapp.admin module
 -------------------------
 
-.. automodule:: wikipediaapp.apps
-    :members:
-    :undoc-members:
-    :show-inheritance:
+.. automodule:: wikipediaapp.admin
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
-wikipediaapp\.models module
----------------------------
+wikipediaapp.apps module
+------------------------
+
+.. automodule:: wikipediaapp.apps
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+wikipediaapp.models module
+--------------------------
 
 .. automodule:: wikipediaapp.models
-    :members:
-    :undoc-members:
-    :show-inheritance:
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
-wikipediaapp\.tests module
---------------------------
+wikipediaapp.tests module
+-------------------------
 
 .. automodule:: wikipediaapp.tests
-    :members:
-    :undoc-members:
-    :show-inheritance:
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
-wikipediaapp\.views module
---------------------------
+wikipediaapp.views module
+-------------------------
 
 .. automodule:: wikipediaapp.views
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
 Module contents
 ---------------
 
 .. automodule:: wikipediaapp
-    :members:
-    :undoc-members:
-    :show-inheritance:
+   :members:
+   :undoc-members:
+   :show-inheritance:

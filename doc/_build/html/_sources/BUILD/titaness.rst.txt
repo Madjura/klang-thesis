@@ -4,59 +4,58 @@ titaness package
 Submodules
 ----------
 
-titaness\.celery module
------------------------
+titaness.celery module
+----------------------
 
 .. automodule:: titaness.celery
-    :members:
-    :undoc-members:
-    :show-inheritance:
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
-titaness\.celery\_setup module
-------------------------------
+titaness.celery\_setup module
+-----------------------------
 
 .. automodule:: titaness.celery_setup
-    :members:
-    :undoc-members:
-    :show-inheritance:
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
-titaness\.routers module
-------------------------
+titaness.routers module
+-----------------------
 
 .. automodule:: titaness.routers
-    :members:
-    :undoc-members:
-    :show-inheritance:
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
-titaness\.settings module
--------------------------
+titaness.settings module
+------------------------
 
 .. automodule:: titaness.settings
-    :members:
-    :undoc-members:
-    :show-inheritance:
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
-titaness\.urls module
----------------------
+titaness.urls module
+--------------------
 
 .. automodule:: titaness.urls
-    :members:
-    :undoc-members:
-    :show-inheritance:
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
-titaness\.wsgi module
----------------------
+titaness.wsgi module
+--------------------
 
 .. automodule:: titaness.wsgi
-    :members:
-    :undoc-members:
-    :show-inheritance:
-
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
 Module contents
 ---------------
 
 .. automodule:: titaness
-    :members:
-    :undoc-members:
-    :show-inheritance:
+   :members:
+   :undoc-members:
+   :show-inheritance:

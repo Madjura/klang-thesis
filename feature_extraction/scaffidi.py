@@ -17,6 +17,12 @@ from django.core.exceptions import ObjectDoesNotExist
 
 
 def _total_count(use_index=False, users=None):
+    """
+    Counts the total number of words in the reference corpus.
+    :param use_index: Whether to use the general Wikipedia corpus or the other Twitter users.
+    :param users: The other users to use as a reference corpus.
+    :return:
+    """
     if use_index and users is not None:
         # TODO: check which is correct
         # other_users = UserEx.objects.exclude(pk__in=users.values_list("pk", flat=True))
@@ -92,6 +98,13 @@ def _bigram_counts(bigrams):
 
 
 def _reference_freq(term, use_index, users):
+    """
+    Gets the frequency of a term in the reference corpus-
+    :param term: The term.
+    :param use_index: Whether to use the general Wikipedia corpus or the other Twitter users as reference.
+    :param users: The other users.
+    :return:
+    """
     if use_index and users is not None:
         other_users = UserEx.objects.exclude(pk__in=users.values_list("pk", flat=True))
         count = TweetExIndex.objects.filter(term=term, tweet__user__in=other_users).aggregate(Sum("count"))[

@@ -181,20 +181,6 @@ def break_conflicts(scores, input_rel, debuts_simple, _debug=True):
     return broader_generic, contribues_to, conflict_remove
 
 
-def debug():
-    with open("/home/madjura/PycharmProjects/klang/klang/x_vec_2012.p", "rb") as f:
-        v1 = pickle.load(f)
-    with open("/home/madjura/PycharmProjects/klang/klang/y_vec_2012.p", "rb") as f:
-        v2 = pickle.load(f)
-    with open("/home/madjura/PycharmProjects/klang/klang/x_vec_enlightenment.p", "rb") as f:
-        v3 = pickle.load(f)
-    with open("/home/madjura/PycharmProjects/klang/klang/y_vec_enlightenment.p", "rb") as f:
-        v4 = pickle.load(f)
-    print("!")
-    foo = [(i, x, v2[i]) for i, x in enumerate(v1) if v2[i] != x]
-    print(foo)
-
-
 if __name__ == "__main__":
     # debug()
     # _p = "/home/madjura/PycharmProjects/klang/klang/scores/ALL_KEYWORDS(books_500)_scores.txt"

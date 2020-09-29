@@ -213,7 +213,6 @@ def index_for_users(users, lang="en", pr=None):
     _index_external(to_index_all, IndexType.TWEET, lang=lang)
 
 
-
 if __name__ == "__main__":
     # f = FeedContent.objects.get(feed__pk=785)
     # _tweet_data()

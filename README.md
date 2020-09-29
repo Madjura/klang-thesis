@@ -25,16 +25,8 @@ Alternatively you can select `all` and download all the resources.<br/>
 As the directory for the resources, choose one that your server running the system can find. Using Apache2 on Ubuntu 14.04 for example, that would be `/var/www/nltk_data`. If you are unsure, refer to the documentation of your server or try to run the system and check the error message for the directories it searched to find the resources, then move them there.
 
 ## Usage
-To use the system, have it running on a server and navigate to it in the browser. Login using the superuser created as part of the installation and upload texts.<br>
-### NOTE
-The system works only with .txt files with UTF-8 encoding. As it is not possible to automatically and perfectly detect the encoding of a text file and convert it the user must take care of this on their end and ensure the correct encoding. Encodings other than UTF-8 might work but will most likely not.
+Continue reading for where to find the various algorithms and files required to run them.
 
-## Celery
-The following steps are optional but recommended.<br/>
-Install Celery and RabbitMQ. Follow the instructions found in the documentation for Celery:<br/> http://docs.celeryproject.org/en/latest/getting-started/first-steps-with-celery.html#first-steps<br/> 
-Turn on the usage of Celery in settings.py. Then, in the toplevel project folder (the one containing manage.py), run:<br/> 
-`celery -A titaness worker -l info -P eventlet –pool=solo` in a console/terminal of your choice.<br/> 
-If you do not want to or can not use Celery on your system, you can simply keep the `USE_CELERY` settings in `settings.py` set to False.<br/> 
 
 ### Klang algorithm
 To run the Klang algorithm use `main.py` in the `klang` package.
@@ -43,6 +35,10 @@ Load suitable models, paths are provided, or generate one with spIke or tf-idf a
 ### spIke algorithm
 To run the spIke algorithm see `thesis/spike_thesis.py`.
 Includes the functions that were used to create the Klang inputs, for both spIke models and for tf-idf approach.
+
+To use a general corpus the Wikipedia corpus of the University of Leipzig can be used.
+You can download it here: https://wortschatz.uni-leipzig.de/de/download/german
+The terms of use can be found here: https://wortschatz.uni-leipzig.de/de/usage
 
 ### tf-idf approach
 Can be found in the package `cluster`.
