@@ -58,3 +58,9 @@ The list of schools / consulting providers used for this thesis can be found in 
 ### Documentation
 
 The documentation can be found here: https://madjura.github.io/klang-thesis/
+
+### Thesis files
+
+The thesis in PDF format can be found here: https://github.com/Madjura/klang-thesis/blob/master/masters_thesis.zip .
+
+The presentation of the thesis can be found here: https://github.com/Madjura/klang-thesis/blob/master/masters_thesis_presentation.zip .
